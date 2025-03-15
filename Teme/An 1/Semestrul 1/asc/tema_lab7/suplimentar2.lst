@@ -1,0 +1,41 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8 00000000 01020304                    s1 db 1, 2, 3, 4
+     9 00000004 05060708                    s2 db 5, 6, 7, 8
+    10                                      l equ $-s2
+    11 00000008 00<rept>                    d times l db 0
+    12 0000000C 0200                        doi dw 2
+    13                                  segment code use32 class=code
+    14                                      start:
+    15 00000000 B904000000                      mov ecx, l
+    16 00000005 BE00000000                      mov esi, 0
+    17 0000000A E33D                            jecxz sfarsit
+    18                                          repeta:
+    19 0000000C 89F0                                mov eax, esi
+    20 0000000E 50                                  push eax
+    21 0000000F 6658                                pop ax
+    22 00000011 665A                                pop dx
+    23 00000013 66F735[0C000000]                    div word [doi]
+    24 0000001A 6683FA00                            cmp dx, 0
+    25 0000001E 7414                                jz poz_para
+    26 00000020 8A9E[00000000]                      mov bl, [s1+esi]
+    27 00000026 2A9E[04000000]                      sub bl, [s2+esi]
+    28 0000002C 889E[08000000]                      mov [d+esi], bl
+    29 00000032 7512                                jnz poz_impara
+    30                                              poz_para:
+    31 00000034 8A9E[00000000]                          mov bl, [s1+esi]
+    32 0000003A 029E[04000000]                          add bl, [s2+esi]
+    33 00000040 889E[08000000]                          mov [d+esi], bl
+    34                                              poz_impara
+    34          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    35 00000046 46                                  inc esi
+    36 00000047 E2C3                            loop repeta
+    37                                          sfarsit
+    37          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    38                                      
+    39                                          

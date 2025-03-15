@@ -1,0 +1,98 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit, scanf, printf
+     5                                  import exit msvcrt.dll
+     6                                  import scanf msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  
+     9                                  ; Sa se citeasca de la tastatura un numar n reprezentat pe doubleword. Apoi sa se citeasca un sir de n numere (doubleword), sa se stocheze in memorie si sa se
+    10                                  ; construiasca un nou sir de bytes, unde fiecare element reprezinta valoarea sumei cifrelor pare a numarului din sirul de doublewords de pe poz coresp (in baza 10).
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 00000000                    n dd 0
+    14 00000004 <res 00000190>              sir_numere resd 100
+    15 00000194 <res 00000064>              sir_suma_cifre_pare resb 100
+    16 000001F8 00                          suma_cifre_pare_nr_curent db 0
+    17 000001F9 496E74726F64756365-         format1 db 'Introduceti un numar: ', 10, 0
+    17 00000202 746920756E206E756D-
+    17 0000020B 61723A200A00       
+    18 00000211 256400                      format2 db '%d', 0
+    19 00000214 496E74726F64756365-         format3 db 'Introduceti un sir de %u numere: ', 10, 0
+    19 0000021D 746920756E20736972-
+    19 00000226 206465202575206E75-
+    19 0000022F 6D6572653A200A00   
+    20 00000237 0A00                        zece dw 10
+    21 00000239 25640A00                    format4 db '%d', 10, 0
+    22                                     
+    23                                  segment code use32 class=code
+    24                                      suma_cifrelor_pare:
+    25 00000000 8B442404                        mov eax, [esp+4]
+    26 00000004 50                              push eax
+    27 00000005 665A                            pop dx
+    28 00000007 6658                            pop ax
+    29 00000009 C605[F8010000]00                mov byte [suma_cifre_pare_nr_curent], 0
+    30 00000010 66F735[37020000]                div word [zece]
+    31                                          imparte:
+    32 00000017 6683F800                            cmp ax, 0
+    33 0000001B 7418                                je gata
+    34 0000001D F6C201                              test dl, 1h
+    35 00000020 7506                                jnz impar
+    36 00000022 0015[F8010000]                      add [suma_cifre_pare_nr_curent], dl
+    37                                              impar:
+    38 00000028 66BA0000                            mov dx, 0
+    39 0000002C 66F735[37020000]                    div word [zece]
+    40 00000033 EBE2                            jmp imparte
+    41                                          gata:
+    42 00000035 A0[F8010000]                        mov al, [suma_cifre_pare_nr_curent]
+    43 0000003A 0FB6C0                              movzx eax, al
+    44 0000003D C3                                  ret
+    45                                      start:
+    46 0000003E FC                              cld
+    47 0000003F 68[F9010000]                    push format1
+    48 00000044 FF15[00000000]                  call [printf]
+    49 0000004A 83C404                          add esp, 4
+    50                                          
+    51 0000004D 68[00000000]                    push n
+    52 00000052 68[11020000]                    push format2
+    53 00000057 FF15[00000000]                  call [scanf]
+    54 0000005D 83C408                          add esp, 8
+    55                                          
+    56 00000060 FF35[00000000]                  push dword [n]
+    57 00000066 68[14020000]                    push format3
+    58 0000006B FF15[00000000]                  call [printf]
+    59 00000071 83C408                          add esp, 8
+    60                                          
+    61 00000074 FF35[00000000]                  push dword [n]
+    62                                          
+    63 0000007A BF[04000000]                    mov edi, sir_numere
+    64                                          citeste:
+    65 0000007F 57                                  push edi
+    66 00000080 68[11020000]                        push format2
+    67 00000085 FF15[00000000]                      call [scanf]
+    68 0000008B 83C408                              add esp, 8
+    69 0000008E 83C704                              add edi, 4
+    70 00000091 FF0D[00000000]                      dec dword [n]
+    71 00000097 833D[00000000]00                    cmp dword [n], 0
+    72 0000009E 77DF                            ja citeste
+    73                                          
+    74 000000A0 8F05[00000000]                  pop dword [n]
+    75 000000A6 BE[04000000]                    mov esi, sir_numere
+    76 000000AB BF[94010000]                    mov edi, sir_suma_cifre_pare
+    77                                          repeta:
+    78 000000B0 AD                                  lodsd
+    79 000000B1 50                                  push eax
+    80 000000B2 E849FFFFFF                          call suma_cifrelor_pare
+    81 000000B7 50                                  push eax
+    82 000000B8 68[39020000]                        push format4
+    83 000000BD FF15[00000000]                      call [printf]
+    84 000000C3 83C408                              add esp, 8
+    85 000000C6 AA                                  stosb
+    86 000000C7 FF0D[00000000]                      dec dword [n]
+    87 000000CD 833D[00000000]00                    cmp dword [n], 0
+    88 000000D4 77DA                            ja repeta
+    89                                          
+    90                                          
+    91                                          
+    92 000000D6 6A00                            push dword 0
+    93 000000D8 FF15[00000000]                  call [exit]

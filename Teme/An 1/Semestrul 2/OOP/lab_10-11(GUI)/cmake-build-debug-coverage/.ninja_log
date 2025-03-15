@@ -1,0 +1,21 @@
+# ninja log v5
+7	32	1714294150030843274	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/cmake-build-debug-coverage/lab_6_pb_7_autogen/timestamp	67438a7453f77803
+7	32	1714294150030843274	lab_6_pb_7_autogen/mocs_compilation.cpp	67438a7453f77803
+599	897	1714229101175356596	CMakeFiles/lab_6_pb_7.dir/utils/utils.cpp.o	2a65d460b45524e9
+51	73	1714229100351042403	CMakeFiles/lab_6_pb_7.dir/lab_6_pb_7_autogen/mocs_compilation.cpp.o	517d2b7a1fc24582
+38	569	1714238863559626277	CMakeFiles/lab_6_pb_7.dir/repository/repository.cpp.o	8330803fe37aa9c3
+4	30	1714228834759625129	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_6_pb_7/cmake-build-debug-coverage/lab_6_pb_7_autogen/timestamp	807594aacf5a5895
+4	30	1714228834759625129	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_6_pb_7/cmake-build-debug-coverage/lab_6_pb_7_autogen/mocs_compilation.cpp	807594aacf5a5895
+614	897	1714229101176655621	CMakeFiles/lab_6_pb_7.dir/undo/undo.cpp.o	99aee9893682c65a
+33	970	1714294150964063149	CMakeFiles/lab_6_pb_7.dir/ui/UI.cpp.o	4a9a2d31b9275f60
+27	507	1714238976615478260	CMakeFiles/lab_6_pb_7.dir/tests/tests.cpp.o	577cd835c245e145
+402	724	1714229101002609388	CMakeFiles/lab_6_pb_7.dir/reteta/reteta.cpp.o	5107d0ba34852432
+51	357	1714229100635589141	CMakeFiles/lab_6_pb_7.dir/domain/Medicament.cpp.o	cb8a0b41e66c4f5e
+970	1064	1714294151059332597	lab_6_pb_7	2a258bdf82ea972b
+7	32	1714294150030843274	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/cmake-build-debug-coverage/lab_6_pb_7_autogen/mocs_compilation.cpp	67438a7453f77803
+538	900	1714229101179010292	CMakeFiles/lab_6_pb_7.dir/repository/inFileRepository.cpp.o	23b31a385364e079
+358	599	1714229100873339395	CMakeFiles/lab_6_pb_7.dir/validare/errors.cpp.o	3a33fc6a68d10ba6
+38	844	1714238863833317611	CMakeFiles/lab_6_pb_7.dir/service/service.cpp.o	6eed1a76fb4e9ff4
+33	931	1714294150925136659	CMakeFiles/lab_6_pb_7.dir/main.cpp.o	867c3b15517a329f
+0	54	1716632178358126442	build.ninja	64ac54cb2385fcbb
+7	32	1714294150030843274	lab_6_pb_7_autogen/timestamp	67438a7453f77803

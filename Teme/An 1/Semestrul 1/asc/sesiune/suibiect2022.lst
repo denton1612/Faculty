@@ -1,0 +1,140 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit, printf
+     5                                  import exit msvcrt.dll
+     6                                  import printf msvcrt.dll
+     7                                  
+     8                                  segment data use32 class=data
+     9 00000000 AB12CD34EF56                s1 dw 12abh, 34cdh, 56efh
+    10 00000006 00351100FB7F                s2 dw 3500h, 0011h, 7ffbh
+    11                                      len equ (s2-s1)/2
+    12 0000000C 00000000<rept>              s3 times len dd 0
+    13 00000018 00<rept>                    sir_afisare times 33*len db 0
+    14 0000007B 257300                      format db '%s', 0
+    15 0000007E 01000000                    sortat dd 1
+    16 00000082 00000000                    index dd 0
+    17                                      
+    18                                  segment code use32 class=code
+    19                                      nr_biti_1:
+    20 00000000 8B542404                        mov edx, [esp+4]
+    21 00000004 B920000000                      mov ecx, 32
+    22 00000009 31C0                            xor eax, eax
+    23                                          repeta:
+    24 0000000B D1E2                                shl edx, 1
+    25 0000000D 83D000                              adc eax, 0
+    26 00000010 E2F9                            loop repeta
+    27 00000012 C3                              ret
+    28                                      
+    29                                      afisare_in_baza_2:
+    30 00000013 8B542404                        mov edx, [esp+4]
+    31 00000017 B920000000                      mov ecx, 32
+    32 0000001C 30C0                            xor al, al
+    33                                          roteste:
+    34 0000001E D1E2                                shl edx, 1
+    35 00000020 1430                                adc al, '0'
+    36 00000022 AA                                  stosb
+    37 00000023 30C0                                xor al, al
+    38 00000025 E2F7                            loop roteste
+    39 00000027 C3                              ret
+    40                                          
+    41                                      start:
+    42 00000028 BE[00000000]                    mov esi, s1
+    43 0000002D BB[06000000]                    mov ebx, s2
+    44 00000032 BF[0C000000]                    mov edi, s3
+    45 00000037 B903000000                      mov ecx, len
+    46                                          muta:             ; loop ul acesta creeaza sirul de dd s3 formate din word urile de la aceeasi pozitie din s1 si s2
+    47 0000003C 66A5                                movsw
+    48 0000003E 56                                  push esi
+    49 0000003F 89DE                                mov esi, ebx
+    50 00000041 66A5                                movsw
+    51 00000043 89F3                                mov ebx, esi
+    52 00000045 5E                                  pop esi
+    53 00000046 E2F4                            loop muta
+    54 00000048 B903000000                      mov ecx, len
+    55 0000004D BE[0C000000]                    mov esi, s3
+    56                                          parcurge:
+    57                                              ; voi sorta folosind bubble sort
+    58 00000052 51                                  push ecx
+    59                                              compara:
+    60 00000053 AC                                      lodsb
+    61 00000054 0FB6C0                                  movzx eax, al ; voi extinde octetul de la poz i din s3 in eax (fara semn pt a nu influenta nr de biti de 1)
+    62 00000057 50                                      push eax
+    63 00000058 E8A3FFFFFF                              call nr_biti_1
+    64 0000005D 83C404                                  add esp, 4
+    65 00000060 89C3                                    mov ebx, eax ; ebx va retine nr de biti de 1 din octetul de la poz i din s3
+    66 00000062 AC                                      lodsb
+    67 00000063 0FB6C0                                  movzx eax, al ; voi extinde octetul de la poz i+1 din s3 in eax voi
+    68 00000066 50                                      push eax
+    69 00000067 E894FFFFFF                              call nr_biti_1 ; eax va retine nr de biti de 1 din octetul de la poz i+1 din s3
+    70 0000006C 83C404                                  add esp, 4
+    71 0000006F 39C3                                    cmp ebx, eax
+    72 00000071 7235                                    jb ok
+    73 00000073 8A56FF                                  mov dl, [esi-1] ; dl contine octetul de pe poz i+1 din s3
+    74 00000076 3856FE                                  cmp byte [esi-2], dl
+    75 00000079 7E2D                                    jle ok
+    76 0000007B C705[7E000000]0000-                     mov dword [sortat], 0 ; daca ebx !< eax, atunci sirul nu este sortat
+    76 00000083 0000               
+    77 00000085 39C3                                    cmp ebx, eax
+    78 00000087 7713                                    ja interschimba ; daca ebx > eax, atunci trebuie interschimbati octetii
+    79 00000089 8A56FF                                  mov dl, [esi-1] ; dl contine octetul de pe poz i+1 din s3
+    80 0000008C 3856FE                                  cmp byte [esi-2], dl
+    81 0000008F 7E17                                    jle ok
+    82 00000091 8A5EFE                                  mov bl, [esi-2]
+    83 00000094 8856FE                                  mov [esi-2], dl
+    84 00000097 885EFF                                  mov [esi-1], bl
+    85 0000009A EB0C                                    jmp ok
+    86                                                  interschimba:
+    87 0000009C 8A56FF                                  mov dl, [esi-1]
+    88 0000009F 8A5EFE                                  mov bl, [esi-2]
+    89 000000A2 8856FE                                  mov [esi-2], dl
+    90 000000A5 885EFF                                  mov [esi-1], bl
+    91                                                  ok:
+    92 000000A8 4E                                      dec esi ; pentru ca in al sa se incarce octetul de la poz i+1 din s3, nu i+2
+    93 000000A9 56                                      push esi
+    94 000000AA 81EE[0C000000]                          sub esi, s3
+    95 000000B0 56                                      push esi
+    96 000000B1 6658                                    pop ax
+    97 000000B3 665A                                    pop dx
+    98 000000B5 66BB0400                                mov bx, 4
+    99 000000B9 66F7F3                                  div bx
+   100 000000BC 6683FA03                                cmp dx, 3
+   101 000000C0 5E                                      pop esi
+   102 000000C1 7290                                    jb compara
+   103 000000C3 833D[7E000000]00                        cmp dword [sortat], 0
+   104 000000CA 7712                                    ja afara
+   105 000000CC C705[7E000000]0100-                     mov dword [sortat], 1 
+   105 000000D4 0000               
+   106 000000D6 83EE03                                  sub esi, 3
+   107 000000D9 E975FFFFFF                          jmp compara
+   108                                              afara:
+   109 000000DE 46                                  inc esi
+   110 000000DF 59                                  pop ecx
+   111                                              parcurge1:
+   112 000000E0 E96DFFFFFF                              jmp parcurge
+   113 000000E5 E2F9                            loop parcurge1
+   114                                          
+   115                                          ; ajunsi in punctul asta, sirul de dd s3 are dd urile construite conform cerinteti
+   116                                          ; este nevoie doar sa il mai afisam in baza 2
+   117                                          
+   118 000000E7 BE[0C000000]                    mov esi, s3
+   119 000000EC BF[18000000]                    mov edi, sir_afisare
+   120 000000F1 B903000000                      mov ecx, len
+   121                                          construieste:
+   122 000000F6 51                                  push ecx
+   123 000000F7 AD                                  lodsd
+   124 000000F8 50                                  push eax
+   125 000000F9 E815FFFFFF                          call afisare_in_baza_2
+   126 000000FE B87C000000                          mov eax, '|'
+   127 00000103 AB                                  stosd
+   128 00000104 59                                  pop ecx
+   129 00000105 E2EF                            loop construieste
+   130 00000107 B000                            mov al, 0
+   131 00000109 AA                              stosb 
+   132 0000010A 68[18000000]                    push sir_afisare
+   133 0000010F 68[7B000000]                    push format
+   134 00000114 FF15[00000000]                  call [printf]
+   135 0000011A 83C408                          add esp, 8
+   136                                          
+   137                                          
+   138                                      

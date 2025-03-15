@@ -1,0 +1,51 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, scanf, printf
+     6                                  import exit msvcrt.dll
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  ; Sa se citeasca un sir de numere intregi s1 (reprezentate pe dublucuvinte) in baza 10. Sa se determine si sa se afiseze sirul s2 compus din cifrele aflate pe poziţia sutelor în fiecare numar intreg din sirul s1.
+    11                                  ; Exemplu:
+    12                                  ; Sirul s1: 5892, 456, 33, 7, 245
+    13                                  ; Sirul s2: 8, 4, 0, 0, 2
+    14                                  
+    15                                  segment data use32 class=data
+    16 00000000 00000000                    numar_curent dd 0
+    17 00000004 <res 00000064>              sir_cifra_sutelor resb 100
+    18 00000068 6400                        suta dw 100
+    19 0000006A 0A                          zece db 10
+    20 0000006B 256400                      formats db '%d', 0
+    21 0000006E 43696672656C652073-         formatp db 'Cifrele sutelor sunt: %s'
+    21 00000077 7574656C6F72207375-
+    21 00000080 6E743A202573       
+    22                                      
+    23                                  segment code use32 class=code
+    24                                      cifra_sutelor:
+    25 00000000 8B442404                        mov eax, [esp+4]
+    26 00000004 50                              push eax
+    27 00000005 6658                            pop ax
+    28 00000007 665A                            pop dx
+    29 00000009 66F73D[68000000]                idiv word [suta]
+    30 00000010 F63D[6A000000]                  idiv byte [zece]
+    31 00000016 0FB6C4                          movzx eax, ah
+    32 00000019 C3                              ret
+    33                                      start:
+    34 0000001A BF[04000000]                    mov edi, sir_cifra_sutelor
+    35                                          repeta:
+    36 0000001F 68[00000000]                        push dword numar_curent
+    37 00000024 68[6B000000]                        push dword formats
+    38 00000029 FF15[00000000]                      call [scanf]
+    39 0000002F 83C408                              add esp, 4*2
+    40 00000032 833D[00000000]00                    cmp dword [numar_curent], 0
+    41 00000039 7411                                je final
+    42 0000003B FF35[00000000]                      push dword [numar_curent]
+    43 00000041 E8BAFFFFFF                          call cifra_sutelor
+    44 00000046 83C404                              add esp, 4
+    45 00000049 AA                                  stosb
+    46 0000004A EBD3                            jmp repeta
+    47                                          final:
+    48 0000004C 6A00                            push dword 0
+    49 0000004E FF15[00000000]                  call [exit]

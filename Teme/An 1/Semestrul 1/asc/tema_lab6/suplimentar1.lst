@@ -1,0 +1,42 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8                                      ; Se da octetul A. Sa se obtina numarul intreg n reprezentat de bitii 2-4 ai lui A. Sa se obtina apoi in B octetul rezultat prin rotirea spre dreapta a lui A cu n pozitii. Sa se obtina dublucuvantul C:
+     9                                      ; bitii 8-15 ai lui C sunt 0
+    10                                      ; bitii 16-23 ai lui C coincid cu bitii lui B
+    11                                      ; bitii 24-31 ai lui C coincid cu bitii lui A
+    12                                      ; bitii 0-7 ai lui C sunt 1
+    13 00000000 0F                          a db 00001111b
+    14 00000001 <res 00000001>              b resb 1
+    15 00000002 <res 00000001>              n resb 1
+    16 00000003 <res 00000004>              c resd 1
+    17                                      
+    18                                  segment code use32 class=code
+    19                                      start
+    19          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    20 00000000 A0[00000000]                mov al, [a]
+    21 00000005 C605[02000000]00            mov [n], byte 0
+    22 0000000C 241C                        and al, 00011100b
+    23 0000000E C0C802                      ror al, 2
+    24 00000011 0805[02000000]              or [n], al
+    25 00000017 8A0D[02000000]              mov cl, [n]
+    26 0000001D A0[00000000]                mov al, [a]
+    27 00000022 D2C8                        ror al, cl
+    28 00000024 A2[01000000]                mov [b], al
+    29 00000029 BA00000000                  mov edx, 0
+    30 0000002E 80CAFF                      or dl, 11111111b
+    31 00000031 80E600                      and dh, 00000000b
+    32 00000034 66B90000                    mov cx, 0
+    33 00000038 8A0D[01000000]              mov cl, [b]
+    34 0000003E 8A2D[00000000]              mov ch, [a]
+    35 00000044 6651                        push cx
+    36 00000046 6652                        push dx
+    37 00000048 5A                          pop edx
+    38 00000049 8915[03000000]              mov [c], edx
+    39                                      
+    40                                      
+    41                                      

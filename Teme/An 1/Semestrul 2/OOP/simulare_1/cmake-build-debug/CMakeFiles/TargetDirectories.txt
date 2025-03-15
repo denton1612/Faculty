@@ -1,0 +1,5 @@
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/CMakeFiles/simulare_1.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/CMakeFiles/simulare_1_autogen_timestamp_deps.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/CMakeFiles/simulare_1_autogen.dir

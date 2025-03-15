@@ -1,0 +1,39 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class = data
+     8                                   ;Se da un sir de dublucuvinte continand date impachetate (4 octeti scrisi ca un singur dublucuvant). Sa se obtina un nou sir de dublucuvinte, in care fiecare dublucuvant se va obtine dupa regula: suma octetilor de 
+     9                                   
+    10 00000000 78567F12CDABCDABFF-     s dd 127F5678h, 0ABCDABCDh, 0FFFFFFFFh
+    10 00000009 FFFFFF             
+    11                                  l equ ($-s)/4 ; lungimea sirului s (nr de dublucuvinte)
+    12 0000000C 00000000<rept>          d times l dd 0
+    13                                  
+    14                                  segment code use32 class = code
+    15                                      start:
+    16 00000000 B903000000                      mov ecx, l
+    17 00000005 FC                              cld
+    18 00000006 BE[00000000]                    mov esi, s
+    19 0000000B BF[0C000000]                    mov edi, d
+    20                                          repeta1:
+    21 00000010 AC                                  lodsb ; in al vom avea octetul de ordin 0 al dw din sir
+    22 00000011 6698                                cbw
+    23 00000013 6689C3                              mov bx, ax ; in bx vom stoca suma octetilor de ordin par
+    24 00000016 AC                                  lodsb ; in al vom avea octetul de ordin 1 al dw din sir
+    25 00000017 6698                                cbw
+    26 00000019 6689C2                              mov dx, ax
+    27 0000001C AC                                  lodsb ; in al vom avea octetul de ordin 2 al dw din sir
+    28 0000001D 6698                                cbw
+    29 0000001F 6601D8                              add ax, bx ; primul word din dublucuvant
+    30 00000022 66AB                                stosw ; vom stoca in cuvantul de ordin par (inferior) suma octetilor de ordin par
+    31 00000024 AC                                  lodsb ; in al vom avea octetul de ordin 3 al dw din sir
+    32 00000025 6698                                cbw
+    33 00000027 6601D0                              add ax, dx
+    34 0000002A 66AB                                stosw ; vom stoca in cuvantul de ordin impar (superior) suma octetilor de ordin impar
+    35 0000002C E2E2                            loop repeta1
+    36                                          
+    37 0000002E 6A00                        push dword 0
+    38 00000030 FF15[00000000]              call [exit]

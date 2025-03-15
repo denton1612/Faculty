@@ -1,0 +1,5 @@
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/CMakeFiles/masini.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/CMakeFiles/masini_autogen_timestamp_deps.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/CMakeFiles/masini_autogen.dir

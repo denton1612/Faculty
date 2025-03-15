@@ -1,0 +1,3 @@
+/Users/stiubedenis/Desktop/lab1_oop/lab1_pb12/cmake-build-debug/CMakeFiles/lab1_pb12.dir
+/Users/stiubedenis/Desktop/lab1_oop/lab1_pb12/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/lab1_oop/lab1_pb12/cmake-build-debug/CMakeFiles/rebuild_cache.dir

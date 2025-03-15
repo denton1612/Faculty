@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "exercitiu",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "exercitiu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exercitiu-Debug-443b24e17f73c3074fb8.json",
+					"name" : "exercitiu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exercitiu_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exercitiu_autogen-Debug-e2376973a4c15c54a4aa.json",
+					"name" : "exercitiu_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exercitiu_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exercitiu_autogen_timestamp_deps-Debug-df82647908bdd145520b.json",
+					"name" : "exercitiu_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu/cmake-build-debug",
+		"source" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

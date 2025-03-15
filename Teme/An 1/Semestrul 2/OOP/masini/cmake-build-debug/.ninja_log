@@ -1,0 +1,28 @@
+# ninja log v5
+40	899	1719439047997216189	CMakeFiles/masini.dir/main.cpp.o	ad07c656132d1159
+40	246	1719439047346536793	CMakeFiles/masini.dir/Exceptions/exceptions.cpp.o	d099137fcd2d3ac1
+40	349	1719439047450232716	CMakeFiles/masini.dir/Domain/Car.cpp.o	d98932c37f72a403
+61	488	1719439047588640337	CMakeFiles/masini.dir/Service/service.cpp.o	11bc5742ec673dc8
+40	457	1719439047558394202	CMakeFiles/masini.dir/Tests/tests.cpp.o	55d9d3125a2b2385
+349	1041	1719439048141183888	CMakeFiles/masini.dir/TableModel/TableModel.cpp.o	3df9f65996af3bee
+1046	1142	1719439048243542875	masini	9a71bbffa2fb7c6
+4	39	1719439047143835348	masini_autogen/timestamp	faac9f9e4a9bdb2a
+40	412	1719439047512119048	CMakeFiles/masini.dir/FileRepo/FileRepo.cpp.o	7c780a8b9ead84f8
+4	39	1719439047143835348	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug/masini_autogen/timestamp	faac9f9e4a9bdb2a
+4	39	1719439047143835348	masini_autogen/mocs_compilation.cpp	faac9f9e4a9bdb2a
+4	39	1719439047143835348	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug/masini_autogen/mocs_compilation.cpp	faac9f9e4a9bdb2a
+39	61	1719439047164277387	CMakeFiles/masini.dir/masini_autogen/mocs_compilation.cpp.o	39a23a50f101391b
+246	1046	1719439048146558256	CMakeFiles/masini.dir/GUI/gui.cpp.o	baaf179ae588dbb6
+3	156	1719439103892763367	build.ninja	b202bc07835c1da
+6	29	1719439396645539361	masini_autogen/timestamp	faac9f9e4a9bdb2a
+6	29	1719439396645539361	masini_autogen/mocs_compilation.cpp	faac9f9e4a9bdb2a
+6	29	1719439396645539361	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug/masini_autogen/timestamp	faac9f9e4a9bdb2a
+6	29	1719439396645539361	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug/masini_autogen/mocs_compilation.cpp	faac9f9e4a9bdb2a
+29	703	1719439397315937201	CMakeFiles/masini.dir/TableModel/TableModel.cpp.o	3df9f65996af3bee
+704	795	1719439397409440022	masini	9a71bbffa2fb7c6
+6	30	1720710675887052084	masini_autogen/timestamp	faac9f9e4a9bdb2a
+6	30	1720710675887052084	masini_autogen/mocs_compilation.cpp	faac9f9e4a9bdb2a
+6	30	1720710675887052084	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug/masini_autogen/timestamp	faac9f9e4a9bdb2a
+6	30	1720710675887052084	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug/masini_autogen/mocs_compilation.cpp	faac9f9e4a9bdb2a
+31	929	1720710676781065745	CMakeFiles/masini.dir/GUI/gui.cpp.o	baaf179ae588dbb6
+930	1028	1720710676881891661	masini	9a71bbffa2fb7c6

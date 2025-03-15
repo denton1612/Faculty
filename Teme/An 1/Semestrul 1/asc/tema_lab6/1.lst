@@ -1,0 +1,39 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8                                      ; Se dau cuvintele A si B. Sa se obtina dublucuvantul C:
+     9 00000000 A52C                        a dw 0010_1100_1010_0101b
+    10 00000002 D3F0                        b dw 1111_0000_1101_0011b
+    11 00000004 <res 00000004>              c resd 1 ; c = 0010_1100_1010_0101_0000_1111_1110_0101 (dupa rulare)
+    12                                     
+    13                                  segment code use32 class=code
+    14                                      ; bitii 0-4 ai lui C coincid cu bitii 11-15 ai lui A
+    15                                      ; bitii 5-11 ai lui C au valoarea 1
+    16                                      ; bitii 12-15 ai lui C coincid cu bitii 8-11 ai lui B
+    17                                      ; bitii 16-31 ai lui C coincid cu bitii lui A
+    18                                      start:
+    19 00000000 668B15[00000000]            mov dx, [a] ; 16-31 C = A
+    20 00000007 66A1[00000000]              mov ax, [a]
+    21 0000000D 662500F8                    and ax, 1111100000000000b ; ax = 11-15 A
+    22 00000011 B10B                        mov cl, 11
+    23 00000013 66D3C8                      ror ax, cl
+    24 00000016 660DE00F                    or ax, 0000111111100000b ; 5-11 C = 1
+    25 0000001A 668B1D[02000000]            mov bx, [b]
+    26 00000021 6681E3000F                  and bx, 0000111100000000b
+    27 00000026 B104                        mov cl, 4
+    28 00000028 66D3C3                      rol bx, cl
+    29 0000002B 6609D8                      or ax, bx 
+    30 0000002E 6652                        push dx
+    31 00000030 6650                        push ax
+    32 00000032 58                          pop eax
+    33 00000033 A3[04000000]                mov [c], eax
+    34                                          
+    35 00000038 6A00                            push dword 0
+    36 0000003A FF15[00000000]                  call [exit]
+    37                                      
+    38                                      
+    39                                      

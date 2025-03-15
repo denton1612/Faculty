@@ -1,0 +1,5 @@
+1, utb650, tractor, 4
+2, utb 450, tractor, 3
+3, john deer 1250, combina, 8
+4, dac 50, motocoasa, 2
+5, stil 40, drujba, 1

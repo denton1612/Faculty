@@ -1,0 +1,115 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit, printf
+     5                                  import exit msvcrt.dll
+     6                                  import printf msvcrt.dll
+     7                                  
+     8                                  segment data use32 class=data
+     9 00000000 65752C2074752E              sir db 'eu, tu.'
+    10                                      len equ $-sir
+    11 00000007 <res 000000C8>              rez resb 200
+    12 000000CF 00000000                    lungime dd 0
+    13 000000D3 256400                      format1 db '%d', 0
+    14 000000D6 25730A00                    format2 db '%s', 10, 0
+    15 000000DA 2E                          punct db '.'
+    16 000000DB 20                          spatiu db ' '
+    17 000000DC 2C                          virgula db ','
+    18 000000DD 303132333435363738-         tabla db '0123456789', 0
+    18 000000E6 3900               
+    19 000000E8 00                          ok db 0
+    20                                     
+    21                                  segment code use32 class=code
+    22                                      numarBiti:
+    23 00000000 31C0                            xor eax, eax
+    24 00000002 8B542404                        mov edx, [esp+4]
+    25 00000006 B908000000                      mov ecx, 8
+    26                                          repeta1:
+    27 0000000B D1EA                                shr edx, 1
+    28 0000000D 83D000                              adc eax, 0
+    29 00000010 E2F9                            loop repeta1
+    30 00000012 C3                              ret
+    31                                      afisare:
+    32 00000013 8B442404                        mov eax, [esp+4]
+    33 00000017 B920000000                      mov ecx, 32
+    34                                          repeta2:
+    35 0000001C D1E0                                shl eax, 1
+    36 0000001E 721B                                jc este_1
+    37 00000020 803D[E8000000]00                    cmp byte [ok], 0
+    38 00000027 74F3                                je repeta2
+    39 00000029 6A00                                push 0
+    40 0000002B 68[D3000000]                        push format1
+    41 00000030 FF15[00000000]                      call [printf]
+    42 00000036 83C404                              add esp, 4
+    43 00000039 EB17                                jmp gata
+    44                                              este_1:
+    45 0000003B C605[E8000000]01                    mov byte [ok], 1
+    46 00000042 6A01                                push 1
+    47 00000044 68[D3000000]                        push format1
+    48 00000049 FF15[00000000]                      call [printf]
+    49 0000004F 83C404                              add esp, 4
+    50                                              gata:
+    51 00000052 E2C8                            loop repeta2
+    52 00000054 C3                              ret
+    53                                      start:
+    54 00000055 B907000000                      mov ecx, len
+    55 0000005A BE[00000000]                    mov esi, sir
+    56 0000005F BF[07000000]                    mov edi, rez
+    57 00000064 BB[DD000000]                    mov ebx, tabla
+    58                                          repeta:
+    59 00000069 51                                  push ecx
+    60 0000006A AC                                  lodsb
+    61 0000006B 3A05[DA000000]                      cmp al, [punct]
+    62 00000071 750B                                jne nu_e_punct
+    63 00000073 B021                                mov al, '!'
+    64 00000075 AA                                  stosb
+    65 00000076 FF05[CF000000]                      inc dword [lungime]
+    66 0000007C EB5B                                jmp afara
+    67                                              nu_e_punct:
+    68 0000007E 3A05[DB000000]                      cmp al, [spatiu]
+    69 00000084 7509                                jne nu_e_spatiu
+    70 00000086 F6E0                                mul al
+    71 00000088 66C1E808                            shr ax, 8
+    72 0000008C AA                                  stosb
+    73 0000008D EB4A                                jmp afara
+    74                                              nu_e_spatiu:
+    75 0000008F 3A05[DC000000]                      cmp al, [virgula]
+    76 00000095 7517                                jne e_litera
+    77 00000097 B000                                mov al, 0
+    78 00000099 BB[DD000000]                        mov ebx, tabla
+    79                                              executa:
+    80 0000009E D7                                      xlat
+    81 0000009F AA                                      stosb
+    82 000000A0 FEC0                                    inc al
+    83 000000A2 FF05[CF000000]                          inc dword [lungime]
+    84 000000A8 3C0A                                    cmp al, 10
+    85 000000AA 72F2                                    jb executa
+    86 000000AC EB2B                                jmp afara
+    87                                              e_litera:
+    88 000000AE 0FB6C0                              movzx eax, al
+    89 000000B1 89C3                                mov ebx, eax
+    90 000000B3 50                                  push eax
+    91 000000B4 E847FFFFFF                          call numarBiti
+    92 000000B9 83C404                              add esp, 4
+    93 000000BC A901000000                          test eax, 01h
+    94 000000C1 740D                                jz par
+    95 000000C3 D0CB                                ror bl, 1
+    96 000000C5 88D8                                mov al, bl
+    97 000000C7 AA                                  stosb 
+    98 000000C8 FF05[CF000000]                      inc dword [lungime]
+    99 000000CE EB09                                jmp afara
+   100                                              par:
+   101 000000D0 88D8                                mov al, bl
+   102 000000D2 AA                                  stosb
+   103 000000D3 FF05[CF000000]                      inc dword [lungime]
+   104                                              afara:
+   105 000000D9 59                                  pop ecx
+   106 000000DA E28D                            loop repeta
+   107                                          
+   108 000000DC 68[07000000]                    push rez
+   109 000000E1 68[D6000000]                    push format2
+   110 000000E6 FF15[00000000]                  call [printf]
+   111 000000EC 83C408                          add esp, 8
+   112                                          
+   113                                          
+   114                                          

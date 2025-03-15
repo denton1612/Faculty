@@ -1,0 +1,10 @@
+# ninja log v5
+1	32	1710901061192288259	CMakeFiles/lab_2_4.dir/service/service.c.o	ffded07aa3be1b71
+1	34	1710890073989010002	CMakeFiles/lab_2_4.dir/utils/utils.c.o	cd27b8ae7a4340dc
+0	40	1710901061200730018	CMakeFiles/lab_2_4.dir/teste/teste.c.o	67e494fced67bceb
+40	77	1710901061236986025	lab_2_4	3b1001feadd0d881
+1	32	1710901061192060049	CMakeFiles/lab_2_4.dir/ui/ui.c.o	47f8a2f261cb0775
+0	37	1710901061197919209	CMakeFiles/lab_2_4.dir/list/lista.c.o	1c895a06e6899754
+1	38	1710890073994483671	CMakeFiles/lab_2_4.dir/domain/oferte.c.o	498433eb45c3f4b1
+0	23	1710901061183955668	CMakeFiles/lab_2_4.dir/main.c.o	3a355abec206a7ba
+0	38	1722282650696017907	build.ninja	4249fb04466345e4

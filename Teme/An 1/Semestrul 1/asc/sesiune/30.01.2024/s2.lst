@@ -1,0 +1,73 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit, printf
+     5                                  import exit msvcrt.dll
+     6                                  import printf msvcrt.dll
+     7                                  
+     8                                  segment data use32 class=data
+     9 00000000 785634127861341234-         s1 dq 1234617812345678h, 3412567878561234h, 4567871234218967h
+     9 00000009 125678785612346789-
+     9 00000012 213412876745       
+    10                                      l1 equ ($-s1) / 8
+    11 00000018 <res 0000000C>              s2 resd l1
+    12 00000024 6165696F754145494F-         sir_vocale db 'aeiouAEIOU', 0
+    12 0000002D 5500               
+    13 0000002F 0A                          zece db 10
+    14 00000030 00000000                    nr_vocale dd 0
+    15 00000034 256400                      format db '%d', 0
+    16                                     
+    17                                  segment code use32 class=code
+    18                                      vocale:
+    19 00000000 FC                              cld
+    20 00000001 8B5C2404                        mov ebx, [esp+4] ; adresa sirului s2
+    21 00000005 B903000000                      mov ecx, l1
+    22 0000000A BA00000000                      mov edx, 0
+    23 0000000F BE[24000000]                    mov esi, sir_vocale
+    24                                          repeta:
+    25 00000014 BF[24000000]                        mov edi, sir_vocale
+    26 00000019 8A449301                            mov al, [ebx+edx*4+1]
+    27                                              verifica:
+    28 0000001D AE                                      scasb
+    29 0000001E 740B                                    je ok
+    30 00000020 57                                      push edi
+    31 00000021 29F7                                    sub edi, esi
+    32 00000023 83FF09                                  cmp edi, 9
+    33 00000026 7709                                    ja bad
+    34 00000028 5F                                      pop edi
+    35 00000029 EBF2                                jmp verifica
+    36                                              ok:
+    37 0000002B FF05[30000000]                          inc dword [nr_vocale]
+    38                                              bad:
+    39 00000031 83C204                                  add edx, 4
+    40 00000034 E2DE                            loop repeta
+    41 00000036 C20400                          ret 4
+    42                                          
+    43                                      start:
+    44 00000039 FC                              cld
+    45 0000003A B903000000                      mov ecx, l1
+    46 0000003F BE[00000000]                    mov esi, s1 ; pentru parcurgerea sirului s1
+    47 00000044 BF[18000000]                    mov edi, s2
+    48                                          parcurge:
+    49 00000049 AD                                  lodsd
+    50 0000004A AD                                  lodsd ; avem nevoie de dd high din fiecare dq, deci dupa doua lodsd vom avea in eax dd high
+    51 0000004B 6689C3                              mov bx, ax ; cuvantul low din dd high
+    52 0000004E C1E810                              shr eax, 16; ax = cuvnatul high din dd high
+    53 00000051 6639D8                              cmp ax, bx
+    54 00000054 7E07                                jng mai_departe
+    55 00000056 C1E010                              shl eax, 16
+    56 00000059 6689D8                              mov ax, bx ; reconstituim dd high in eax pentru a l salva in s2
+    57 0000005C AB                                  stosd
+    58                                              mai_departe:
+    59 0000005D E2EA                            loop parcurge
+    60                                          
+    61 0000005F 68[18000000]                    push dword s2
+    62 00000064 E897FFFFFF                      call vocale
+    63                                          
+    64 00000069 FF35[30000000]                  push dword [nr_vocale]
+    65 0000006F 68[34000000]                    push format
+    66 00000074 FF15[00000000]                  call [printf]
+    67 0000007A 83C408                          add esp, 4*2
+    68                                          
+    69                                          
+    70                                         

@@ -1,0 +1,68 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, printf
+     6                                  import exit msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  
+     9                                  extern permutare_circulara
+    10                                  
+    11                                  ; Se da un numar a reprezentat pe 32 biti fara semn. Se cere sa se afiseze reprezentarea in baza 16 a lui a, precum si rezultatul permutarilor circulare ale cifrelor sale. 
+    12                                  
+    13                                  segment data use32
+    14 00000000 AAAAFFFF                    a dd 0ffffaaaah
+    15 00000004 4E756D6172756C2069-         format db 'Numarul in baza 16: %x', 10, 0
+    15 0000000D 6E2062617A61203136-
+    15 00000016 3A2025780A00       
+    16 0000001C 5065726D7574617265-         format_permutare db 'Permutarea %u: %x, %s', 10, 0
+    16 00000025 612025753A2025782C-
+    16 0000002E 2025730A00         
+    17 00000033 04000000                    ciclu dd 4
+    18 00000037 01000000                    permutare dd 1
+    19 0000003B FF00<rept>                  permutare_circulara_in_baza_2 times 32 db -1, 0
+    20 0000007B 00000000                    permutare_circulara_in_baza_16 dd 0
+    21                                      
+    22                                  segment code use32 public code
+    23                                      start:
+    24                                          ; apelez functia printf pentru a afisa reprezentarea in baza 16 a valorii a
+    25 00000000 FF35[00000000]                  push dword [a]
+    26 00000006 68[04000000]                    push format
+    27 0000000B FF15[00000000]                  call [printf]
+    28 00000011 83C408                          add esp, 4*2
+    29                                          
+    30                                          repeta:
+    31 00000014 FF35[33000000]                      push dword [ciclu]
+    32 0000001A FF35[00000000]                      push dword [a]
+    33 00000020 E8(00000000)                        call permutare_circulara
+    34 00000025 83C408                              add esp, 4*2
+    35 00000028 A3[7B000000]                        mov [permutare_circulara_in_baza_16], eax
+    36 0000002D 89C3                                mov ebx, eax
+    37 0000002F B000                                mov al, 0
+    38 00000031 BF[3B000000]                        mov edi, permutare_circulara_in_baza_2
+    39 00000036 B920000000                          mov ecx, 32
+    40                                              roteste:
+    41 0000003B D1D3                                    rcl ebx, 1
+    42 0000003D 1400                                    adc al, 0
+    43 0000003F 0430                                    add al, '0'
+    44 00000041 AA                                      stosb
+    45 00000042 30C0                                    xor al, al
+    46 00000044 E2F5                                loop roteste
+    47 00000046 68[3B000000]                        push dword permutare_circulara_in_baza_2
+    48 0000004B FF35[7B000000]                      push dword [permutare_circulara_in_baza_16]
+    49 00000051 FF35[37000000]                      push dword [permutare]
+    50 00000057 68[1C000000]                        push format_permutare
+    51 0000005C FF15[00000000]                      call [printf]
+    52 00000062 83C408                              add esp, 4*2
+    53 00000065 8305[33000000]04                    add dword [ciclu], 4
+    54 0000006C FF05[37000000]                      inc dword [permutare]
+    55 00000072 833D[33000000]1F                    cmp dword [ciclu], 31
+    56 00000079 7702                                ja final
+    57 0000007B EB97                            jmp repeta
+    58                                          
+    59                                      final:
+    60 0000007D 6A00                            push dword 0
+    61 0000007F FF15[00000000]                  call [exit]
+    62                                              
+    63                                          
+    64                                          

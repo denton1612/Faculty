@@ -1,0 +1,25 @@
+# ninja log v5
+36	1127	1716671864799010358	CMakeFiles/lab_6_pb_7.dir/ui/RetetaGUI.cpp.o	98a08bd3c3d5a39b
+4	25	1714169629528256973	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_6_pb_7/cmake-build-debug/lab_6_pb_7_autogen/timestamp	b54234c8ad6a01d9
+814	1147	1714296309882966553	CMakeFiles/lab_6_pb_7.dir/undo/undo.cpp.o	27baf5a14659b204
+26	476	1716631795750105155	CMakeFiles/lab_6_pb_7.dir/tests/tests.cpp.o	c8f4d0eaccc2f853
+39	1314	1716306992757354793	CMakeFiles/lab_6_pb_7.dir/ui/UI.cpp.o	de9ded1c8fd1c00f
+9	34	1716671863713978523	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/cmake-build-debug/lab_6_pb_7_autogen/timestamp	d9f2db6e0f62e25b
+9	34	1716671863713978523	lab_6_pb_7_autogen/mocs_compilation.cpp	d9f2db6e0f62e25b
+35	1157	1716671864829901360	CMakeFiles/lab_6_pb_7.dir/ui/FarmacieGUI.cpp.o	1f08f7090baa3398
+1157	1262	1716671864938787375	lab_6_pb_7	f1c9826fccd31f17
+29	47	1716485841015819993	CMakeFiles/lab_6_pb_7.dir/Observer/Observer.cpp.o	b4f96327a553a738
+722	1127	1714296309861393599	CMakeFiles/lab_6_pb_7.dir/repository/inFileRepository.cpp.o	be5530730b532111
+4	25	1714169629528256973	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_6_pb_7/cmake-build-debug/lab_6_pb_7_autogen/mocs_compilation.cpp	b54234c8ad6a01d9
+133	172	1714296308908983754	CMakeFiles/lab_6_pb_7.dir/lab_6_pb_7_autogen/mocs_compilation.cpp.o	e8c1e5fb793b3a4d
+588	965	1714296309700109423	CMakeFiles/lab_6_pb_7.dir/reteta/reteta.cpp.o	86c3131dc50a7ad2
+134	588	1714296309319449074	CMakeFiles/lab_6_pb_7.dir/repository/repository.cpp.o	88050f7070dadc64
+769	1142	1714296309877604637	CMakeFiles/lab_6_pb_7.dir/utils/utils.cpp.o	a14186f5c653ad
+36	350	1716671864022751844	CMakeFiles/lab_6_pb_7.dir/Observer/Observable.cpp.o	aaa10cc3ee3568be
+133	476	1714296309203954117	CMakeFiles/lab_6_pb_7.dir/domain/Medicament.cpp.o	4cfe4a10065c177b
+9	34	1716671863713978523	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/cmake-build-debug/lab_6_pb_7_autogen/mocs_compilation.cpp	d9f2db6e0f62e25b
+476	722	1714296309457970598	CMakeFiles/lab_6_pb_7.dir/validare/errors.cpp.o	d3b3b4f4ec7ac29b
+9	34	1716671863713978523	lab_6_pb_7_autogen/timestamp	d9f2db6e0f62e25b
+35	1033	1716671864706911977	CMakeFiles/lab_6_pb_7.dir/main.cpp.o	7670122dbd040e49
+3	166	1716715002783138417	build.ninja	67c8071841ed09c5
+35	641	1716671864315179408	CMakeFiles/lab_6_pb_7.dir/service/service.cpp.o	f6c6ce9cd690fcf2

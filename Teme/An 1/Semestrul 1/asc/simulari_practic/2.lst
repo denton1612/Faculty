@@ -1,0 +1,96 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, fopen, fread, fclose, printf
+     6                                  import exit msvcrt.dll
+     7                                  import fopen msvcrt.dll
+     8                                  import fread msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  
+    12                                  ; Se da in segmentul de date numele unui fisier. Acesta contine cifre separate prin spatiu (in baza 16). Sa se afiseze fiecare cifra din fisier si numarul de biti de 1 din reprezentarea binara a acesteia.
+    13                                  
+    14                                  segment data use32 class=data
+    15 00000000 636F6E74696E75742E-         nume_fisier db 'continut.txt', 0
+    15 00000009 74787400           
+    16 0000000D 303132333435363738-         cifre_hexa db '0123456789ABCDEF', 0
+    16 00000016 3941424344454600   
+    17 0000001E FFFFFFFF                    descriptior_fisier dd -1
+    18 00000022 00000000                    caracter dd 0
+    19                                      spatiu equ ' '
+    20 00000026 2563202D2025750A00          formatp db '%c - %u', 10, 0
+    21 0000002F 7200                        mod_acces db 'r', 0
+    22                                      
+    23                                  segment code use32 class=code
+    24                                      
+    25                                      ; 'subprogram' pentru numararea bitilor de 1 ai reprezentarii binare stocate in dl (conventia stdcall - 'apelatul' curata stiva)
+    26                                      
+    27                                      numarare_biti_1:
+    28 00000000 8A542404                        mov dl, [esp+4]
+    29 00000004 B908000000                      mov ecx, 8
+    30 00000009 B800000000                      mov eax, 0
+    31                                          repeta:
+    32 0000000E D0EA                                shr dl, 1
+    33 00000010 83D000                              adc eax, 0
+    34 00000013 E2F9                            loop repeta
+    35 00000015 C20400                          ret 4
+    36                                      
+    37                                      ; main:
+    38                                      
+    39                                      start:
+    40                                      
+    41 00000018 68[2F000000]                    push dword mod_acces
+    42 0000001D 68[00000000]                    push dword nume_fisier
+    43 00000022 FF15[00000000]                  call [fopen]
+    44 00000028 83C408                          add esp, 4*2
+    45                                          
+    46 0000002B 83F800                          cmp eax, 0
+    47 0000002E 7466                            je sfarsit
+    48 00000030 A3[1E000000]                    mov [descriptior_fisier], eax
+    49                                          
+    50                                          citire_caracter:
+    51                                          
+    52 00000035 FF35[1E000000]                  push dword [descriptior_fisier]
+    53 0000003B 6A01                            push 1
+    54 0000003D 6A01                            push 1
+    55 0000003F 68[22000000]                    push caracter
+    56 00000044 FF15[00000000]                  call [fread]
+    57 0000004A 83C410                          add esp, 4*4
+    58                                          
+    59 0000004D 83F800                          cmp eax, 0
+    60 00000050 7444                            je sfarsit
+    61                                          
+    62 00000052 803D[22000000]20                cmp byte [caracter], spatiu
+    63 00000059 74DA                            je citire_caracter
+    64                                          
+    65 0000005B 803D[22000000]39                cmp byte [caracter], '9'
+    66 00000062 7F09                            jg litera
+    67 00000064 A0[22000000]                    mov al, [caracter]
+    68 00000069 2C30                            sub al, '0'
+    69 0000006B EB09                            jmp afisare
+    70                                          litera:
+    71 0000006D A0[22000000]                    mov al, [caracter]
+    72 00000072 2C41                            sub al, 'A'
+    73 00000074 040A                            add al, 10
+    74                                          afisare:
+    75 00000076 0FB6C0                          movzx eax, al
+    76 00000079 50                              push eax
+    77 0000007A E881FFFFFF                      call numarare_biti_1   
+    78                                          
+    79 0000007F 50                              push eax
+    80 00000080 FF35[22000000]                  push dword [caracter]
+    81 00000086 68[26000000]                    push formatp
+    82 0000008B FF15[00000000]                  call [printf]
+    83 00000091 83C40C                          add esp, 4*3
+    84                                          
+    85 00000094 EB9F                            jmp citire_caracter
+    86                                          
+    87                                          sfarsit:
+    88 00000096 FF35[1E000000]                  push dword [descriptior_fisier]
+    89 0000009C FF15[00000000]                  call [fclose]
+    90 000000A2 83C404                          add esp, 4
+    91                                          
+    92 000000A5 6A00                            push dword 0
+    93 000000A7 FF15[00000000]                  call [exit]
+    94                                          

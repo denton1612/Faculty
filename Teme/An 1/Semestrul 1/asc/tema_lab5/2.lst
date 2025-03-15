@@ -1,0 +1,37 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8                                      ; a - byte, b - word, c - double word, d - qword - Interpretare cu semn
+     9 00000000 0A                          a db 10
+    10 00000001 1400                        b dw 20
+    11 00000003 64000000                    c dd 100
+    12 00000007 F401000000000000            d dq 500
+    13                                      
+    14                                  segment code use32 class=code
+    15                                      start
+    15          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    16                                      ; (c+b+a)-(d+d)
+    17 00000000 8B1D[07000000]              mov ebx, [d]
+    18 00000006 031D[07000000]              add ebx, [d]
+    19 0000000C 8B0D[0B000000]              mov ecx, [d+4]
+    20 00000012 83D100                      adc ecx, 0
+    21 00000015 030D[0B000000]              add ecx, [d+4] ; ecx:ebx = d+d
+    22 0000001B A0[00000000]                mov al, [a]
+    23 00000020 6698                        cbw ; ax = a
+    24 00000022 660305[01000000]            add ax, [b]
+    25 00000029 6699                        cwd ; 
+    26 0000002B 6683C200                    add dx, 0 ; dx:ax = b+a
+    27 0000002F 660305[03000000]            add ax, [c]
+    28 00000036 661315[05000000]            adc dx, [c+2] ; dx:ax = c+b+a
+    29 0000003D 6652                        push dx
+    30 0000003F 6650                        push ax
+    31 00000041 58                          pop eax ; eax = c+b+a
+    32 00000042 99                          cdq ; edx:eax = c+b+a
+    33 00000043 29D8                        sub eax, ebx
+    34 00000045 19CA                        sbb edx, ecx ; edx:eax = (c+b+a)-(d+d) 
+    35                                      ; !!!! - sub sau sbb la linia 34????
+    36                                      

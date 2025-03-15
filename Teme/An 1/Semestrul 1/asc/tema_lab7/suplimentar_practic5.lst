@@ -1,0 +1,45 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit
+     6                                  import exit msvcrt.dll
+     7                                  
+     8                                  ; Se dau doua siruri s1 si s2 de octeti (nr naturale). Sa se construiasca sirul d astfel incat acesta sa contina pozitia elementului s2 de pe poz corespunzatoare in sirul s1 (0 daca acesta nu este in s1)
+     9                                  
+    10                                  segment data use32 class=data
+    11 00000000 072137132E                  s1 db 7, 33, 55, 19, 46
+    12 00000005 05                          ls1 db $ - s1
+    13 00000006 2115070D1B1337012E          s2 db 33, 21, 7, 13, 27, 19, 55, 1, 46 
+    14 0000000F 09                          ls2 db $ - s2
+    15 00000010 0000                        poz db 0, 0
+    16 00000012 00                          d db 0
+    17                                  
+    18                                  
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 FC                              cld
+    22 00000001 8B0D[0F000000]                  mov ecx, [ls2]
+    23 00000007 BE[06000000]                    mov esi, s2
+    24 0000000C BF[12000000]                    mov edi, d
+    25                                          repeta1:
+    26 00000011 57                                  push edi
+    27 00000012 BF[00000000]                        mov edi, s1
+    28 00000017 AC                                  lodsb
+    29                                              verifica:
+    30 00000018 FE05[10000000]                          inc byte [poz]
+    31 0000001E 8A15[10000000]                          mov dl, [poz]
+    32 00000024 3A15[05000000]                          cmp dl, [ls1]
+    33 0000002A 7708                                    ja nu_exista 
+    34 0000002C AE                                      scasb
+    35 0000002D 75E9                                    jnz verifica
+    36 0000002F A0[10000000]                        mov al, [poz]
+    37                                              nu_exista:
+    38 00000034 C605[10000000]00                        mov byte [poz], 0
+    39 0000003B 3A15[05000000]                      cmp dl, [ls1]
+    40 00000041 7605                                jbe final
+    41 00000043 A0[10000000]                        mov al, [poz]
+    42                                              final:
+    43 00000048 5F                                      pop edi
+    44 00000049 AA                                      stosb
+    45 0000004A E2C5                            loop repeta1

@@ -1,0 +1,3 @@
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/Transformari/cmake-build-debug/CMakeFiles/Transformari.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/Transformari/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/Transformari/cmake-build-debug/CMakeFiles/rebuild_cache.dir

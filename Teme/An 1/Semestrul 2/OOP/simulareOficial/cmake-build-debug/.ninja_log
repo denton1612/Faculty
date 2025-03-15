@@ -1,0 +1,38 @@
+# ninja log v5
+26	436	1716214170392982306	CMakeFiles/simulareOficial.dir/service/Service.cpp.o	48e1bb1054ae3764
+25	392	1716214170348941971	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	237397913e70c0db
+29	404	1716213518430168146	CMakeFiles/simulareOficial.dir/repository/Lista.cpp.o	d42b7843b4a7ad24
+26	228	1716211655205781837	CMakeFiles/simulareOficial.dir/utils/utils.cpp.o	d8c0159d79c72057
+874	967	1716214170924873925	simulareOficial	173267a44f6f31bb
+4	25	1716214169984617451	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+29	318	1716213518344920987	CMakeFiles/simulareOficial.dir/domain/Elev.cpp.o	ce8cf351ef080a57
+4	25	1716214169984617451	simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+25	873	1716214170827414135	CMakeFiles/simulareOficial.dir/main.cpp.o	fcb1f0123a46a7ae
+26	873	1716214170826971092	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	b61877c06eee6d62
+37	56	1716210022079679388	CMakeFiles/simulareOficial.dir/simulareOficial_autogen/mocs_compilation.cpp.o	b05593334b9ea8cc
+4	25	1716214169984617451	simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+4	25	1716214169984617451	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+5	25	1716214173931088431	simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+5	25	1716214173931088431	simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+5	25	1716214173931088431	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+5	25	1716214173931088431	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+26	375	1716214174277705300	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	237397913e70c0db
+375	472	1716214174375470465	simulareOficial	173267a44f6f31bb
+4	24	1716214206982971353	simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+4	24	1716214206982971353	simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+4	24	1716214206982971353	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+4	24	1716214206982971353	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+25	388	1716214207343749984	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	237397913e70c0db
+388	475	1716214207432171489	simulareOficial	173267a44f6f31bb
+4	25	1716214232082211586	simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+4	25	1716214232082211586	simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+4	25	1716214232082211586	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+4	25	1716214232082211586	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+26	398	1716214232451445666	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	237397913e70c0db
+398	497	1716214232551604549	simulareOficial	173267a44f6f31bb
+5	25	1716214249154867223	simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+5	25	1716214249154867223	simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+5	25	1716214249154867223	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/timestamp	8fd7b852b46e54fd
+5	25	1716214249154867223	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug/simulareOficial_autogen/mocs_compilation.cpp	8fd7b852b46e54fd
+26	372	1716214249499221499	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	237397913e70c0db
+372	462	1716214249589569845	simulareOficial	173267a44f6f31bb

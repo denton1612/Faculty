@@ -1,0 +1,45 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit
+     6                                  import exit msvcrt.dll
+     7                                  
+     8                                  ; Se da un sir de cuvinte s. Sa se construiasca sirul de octeti d, astfel incat d sa contina pentru fiecare pozitie din s:
+     9                                  ; - numarul de biti de 0, daca numarul este negativ
+    10                                  ; - numarul de biti de 1, daca numarul este pozitiv
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 EAFF9100D0FF7F00            s dw -22, 145, -48, 127
+    14 00000008 04                          l db ($ - s) / 2
+    15 00000009 00                          d db 0
+    16                                  
+    17                                  
+    18                                  segment code use32 class=code
+    19                                      nr_biti_1:
+    20 00000000 83C404                          add esp, 4
+    21 00000003 5B                              pop ebx
+    22 00000004 B800000000                      mov eax, 0
+    23                                          .repeta:
+    24 00000009 D1E3                                shl ebx, 1
+    25 0000000B 83D000                              adc eax, 0
+    26 0000000E 83FB00                              cmp ebx, 0
+    27 00000011 75F6                                jnz .repeta
+    28 00000013 83EC08                          sub esp, 8
+    29 00000016 C3                              ret 
+    30                                      start:
+    31 00000017 BE[00000000]                    mov esi, s
+    32 0000001C BF[09000000]                    mov edi, d
+    33 00000021 8B0D[08000000]                  mov ecx, [l]
+    34                                          repeta:
+    35 00000027 B800000000                          mov eax, 0
+    36 0000002C 66AD                                lodsw
+    37 0000002E 6683F800                            cmp ax, 0
+    38 00000032 7F03                                jg final
+    39 00000034 66F7D0                              not ax
+    40                                              final:
+    41 00000037 50                                  push eax
+    42 00000038 E8C3FFFFFF                          call nr_biti_1
+    43 0000003D 83C404                              add esp, 4
+    44 00000040 AA                                  stosb 
+    45 00000041 E2E4                            loop repeta

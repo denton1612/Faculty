@@ -1,0 +1,30 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8                                      ;Se da un sir de octeti S de lungime l. Sa se construiasca sirul D de lungime l-1 astfel incat elementele din D sa reprezinte produsul dintre fiecare 2 elemente consecutive S(i) si S(i+1) din S
+     9 00000000 0A0014001E002800            s dw 10, 20, 30, 40; declararea si initializarea sirului initial
+    10                                      l equ $-s ; l = lungimea lui s
+    11 00000008 0000<rept>                  d times l-1 dw 0 ; declaram si initializam (cu 0) sirul d
+    12                                      
+    13                                  segment code use32 class=code
+    14                                      start:
+    15 00000000 B907000000                      mov ecx, l-1 ; punem lungimea lui d in ecx pentru a realiza loop ul de l-1 ori
+    16 00000005 BE00000000                      mov esi, 0 ; 
+    17 0000000A BB00000000                      mov ebx, 0
+    18 0000000F E319                            jecxz sfarsit
+    19                                          Repeta:
+    20 00000011 8A86[00000000]                      mov al, [s+esi]
+    21 00000017 F6A6[01000000]                      mul byte [s+esi+1]
+    22 0000001D 668983[08000000]                    mov [d+ebx], ax
+    23 00000024 46                                  inc esi
+    24 00000025 83C302                              add ebx, 2
+    25 00000028 E2E7                            loop Repeta
+    26                                          sfarsit:
+    27                                      
+    28 0000002A 6A00                            push dword 0
+    29 0000002C FF15[00000000]                  call [exit]
+    30                                      

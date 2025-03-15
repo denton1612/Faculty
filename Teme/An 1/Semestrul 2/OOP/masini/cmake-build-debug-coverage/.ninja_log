@@ -1,0 +1,15 @@
+# ninja log v5
+40	538	1719404860860537909	CMakeFiles/masini.dir/Domain/Car.cpp.o	6c8c425891927edb
+69	691	1719404861015211940	CMakeFiles/masini.dir/Service/service.cpp.o	d5e4fd5c100cdc80
+5	27	1719404877550177484	masini_autogen/mocs_compilation.cpp	3355057abff09208
+5	27	1719404877550177484	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/masini_autogen/timestamp	3355057abff09208
+38	69	1719404860393656028	CMakeFiles/masini.dir/masini_autogen/mocs_compilation.cpp.o	ccacc55b6cf17a03
+28	828	1719404878345279549	CMakeFiles/masini.dir/main.cpp.o	32a9cb704391910b
+41	336	1719404860660907633	CMakeFiles/masini.dir/Exceptions/exceptions.cpp.o	6815187d2a7ddd09
+41	610	1719404860933210446	CMakeFiles/masini.dir/FileRepo/FileRepo.cpp.o	a8adbc1b06f6dcce
+5	27	1719404877550177484	masini_autogen/timestamp	3355057abff09208
+828	925	1719404878441458375	masini	f772ce4f2ee6c7e6
+539	1310	1719404861632495685	CMakeFiles/masini.dir/TableModel/TableModel.cpp.o	abd2fa9383744681
+40	680	1719404861001613440	CMakeFiles/masini.dir/Tests/tests.cpp.o	945082ee59fe297d
+5	27	1719404877550177484	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage/masini_autogen/mocs_compilation.cpp	3355057abff09208
+338	1319	1719404861643068475	CMakeFiles/masini.dir/GUI/gui.cpp.o	d0ff87ebdd474d5b

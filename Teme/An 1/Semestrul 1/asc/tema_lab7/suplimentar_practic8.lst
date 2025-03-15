@@ -1,0 +1,36 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit
+     6                                  import exit msvcrt.dll
+     7                                  
+     8                                  ; Se da un sir A de cuvinte. Construiti doua siruri de octeti  
+     9                                  ; - B1: contine ca elemente partea superioara a cuvintelor din A
+    10                                  ; - B2: contine ca elemente partea inferioara a cuvintelor din A
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 221144336655887712-         a dw 1122h, 3344h, 5566h, 7788h, 9912h
+    13 00000009 99                 
+    14 0000000A 05                          la db ($-a) / 2
+    15 0000000B <res 00000005>              b1 resb ($-a) / 2 
+    16 00000010 <res 00000005>              b2 resb ($-b1)
+    17                                      
+    18                                  
+    19                                  segment code use32 class=code
+    20                                  start:
+    21 00000000 8B0D[0A000000]              mov ecx, [la]
+    22 00000006 BE[00000000]                mov esi, a
+    23 0000000B BF[10000000]                mov edi, b2
+    24                                      repeta1:
+    25 00000010 66AD                            lodsw
+    26 00000012 AA                              stosb
+    27 00000013 E2FB                        loop repeta1
+    28 00000015 8B0D[0A000000]              mov ecx, [la]
+    29 0000001B BE[00000000]                mov esi, a
+    30 00000020 BF[0B000000]                mov edi, b1
+    31                                      repeta2:
+    32 00000025 66AD                            lodsw
+    33 00000027 88E0                            mov al, ah
+    34 00000029 AA                              stosb
+    35 0000002A E2F9                        loop repeta2

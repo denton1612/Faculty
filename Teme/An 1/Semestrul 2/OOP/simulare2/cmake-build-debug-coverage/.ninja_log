@@ -1,0 +1,32 @@
+# ninja log v5
+130	173	1716203552102374892	CMakeFiles/simulare2.dir/simulare2_autogen/mocs_compilation.cpp.o	1bd218980f3e7ed7
+4	26	1716205973375234135	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+904	999	1716205974346746905	simulare2	64a7f7649bc96b88
+131	486	1716203552413889239	CMakeFiles/simulare2.dir/utils/utils.cpp.o	3724e0fe60670107
+131	560	1716203552487000681	CMakeFiles/simulare2.dir/repository/Lista.cpp.o	8903f0a5c6d10876
+4	26	1716205973375234135	simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+131	521	1716203552447327615	CMakeFiles/simulare2.dir/teste/teste.cpp.o	8759296e56a562ce
+4	26	1716205973375234135	simulare2_autogen/timestamp	87056b83c06f0d42
+26	904	1716205974249528727	CMakeFiles/simulare2.dir/ui/Console.cpp.o	b453f3fc6737a766
+131	378	1716203552304420741	CMakeFiles/simulare2.dir/domain/Apartament.cpp.o	d69233aeaf094a66
+173	525	1716203552450732670	CMakeFiles/simulare2.dir/service/service.cpp.o	1cee12f48d7bd5d3
+25	893	1716205771284738138	CMakeFiles/simulare2.dir/main.cpp.o	cfb33c3c7329be23
+4	26	1716205973375234135	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/timestamp	87056b83c06f0d42
+5	25	1716206013697285355	simulare2_autogen/timestamp	87056b83c06f0d42
+5	25	1716206013697285355	simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+5	25	1716206013697285355	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/timestamp	87056b83c06f0d42
+5	25	1716206013697285355	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+26	887	1716206014553482004	CMakeFiles/simulare2.dir/ui/Console.cpp.o	b453f3fc6737a766
+887	977	1716206014646547411	simulare2	64a7f7649bc96b88
+4	32	1716206438232692442	simulare2_autogen/timestamp	87056b83c06f0d42
+4	32	1716206438232692442	simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+4	32	1716206438232692442	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/timestamp	87056b83c06f0d42
+4	32	1716206438232692442	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+33	1031	1716206439225943846	CMakeFiles/simulare2.dir/ui/Console.cpp.o	b453f3fc6737a766
+1031	1182	1716206439378754511	simulare2	64a7f7649bc96b88
+5	26	1716206527291557091	simulare2_autogen/timestamp	87056b83c06f0d42
+5	26	1716206527291557091	simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+5	26	1716206527291557091	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/timestamp	87056b83c06f0d42
+5	26	1716206527291557091	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare2/cmake-build-debug-coverage/simulare2_autogen/mocs_compilation.cpp	87056b83c06f0d42
+26	986	1716206528247831607	CMakeFiles/simulare2.dir/ui/Console.cpp.o	b453f3fc6737a766
+987	1085	1716206528348378819	simulare2	64a7f7649bc96b88

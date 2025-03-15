@@ -1,0 +1,3 @@
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/lab_2/inchidere_tranzitiva/cmake-build-debug/CMakeFiles/inchidere_tranzitiva.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/lab_2/inchidere_tranzitiva/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/lab_2/inchidere_tranzitiva/cmake-build-debug/CMakeFiles/rebuild_cache.dir

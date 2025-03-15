@@ -1,0 +1,38 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit
+     6                                  import exit msvcrt.dll
+     7                                  
+     8                                  ; Se da un sir de octeti s. Sa se construiasca sirul de octeti d, care contine pe fiecare pozitie numarul de biti 1 ai octetului de pe pozitia corespunzatoare din s.
+     9                                  
+    10                                  segment data use32 class=data
+    11 00000000 0519377F04                  s db 5, 25, 55, 127, 4
+    12 00000005 05                          l db $ - s
+    13 00000006 00                          nr_biti_1 db 0
+    14 00000007 <res 00000007>              d resb $ - s
+    15                                      
+    16                                      
+    17                                  segment code use32 class=code
+    18                                      start:
+    19 00000000 FC                              cld
+    20 00000001 BE[00000000]                    mov esi, s
+    21 00000006 BF[07000000]                    mov edi, d
+    22 0000000B 8B0D[05000000]                  mov ecx, [l]
+    23                                          repeta:
+    24 00000011 C605[06000000]00                    mov [nr_biti_1], byte 0
+    25 00000018 AC                                  lodsb
+    26 00000019 3C00                                cmp al, 0
+    27 0000001B 740D                                jz sfarsit
+    28                                              nr_1:
+    29 0000001D D0E0                                    shl al, 1
+    30 0000001F 8015[06000000]00                        adc byte [nr_biti_1], 0
+    31 00000026 3C00                                    cmp al, 0
+    32 00000028 75F3                                jnz nr_1
+    33                                              sfarsit:
+    34 0000002A A0[06000000]                            mov al, [nr_biti_1]
+    35 0000002F AA                                      stosb
+    36 00000030 E2DF                            loop repeta
+    37                                      
+    38                                      

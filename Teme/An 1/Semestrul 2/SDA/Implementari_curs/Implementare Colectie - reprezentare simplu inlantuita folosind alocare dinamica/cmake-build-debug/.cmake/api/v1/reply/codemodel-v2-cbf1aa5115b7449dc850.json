@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Implementare_Colectie___reprezentare_simplu_inlantuita_folosind_alocare_dinamica",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Implementare_Colectie___reprezentare_simplu_inlantuita_folosind_alocare_dinamica::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Implementare_Colectie___reprezentare_simplu_inlantuita_folosind_alocare_dinamica-Debug-506dea47f7e4cbcd4b10.json",
+					"name" : "Implementare_Colectie___reprezentare_simplu_inlantuita_folosind_alocare_dinamica",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/SDA/Implementare Colectie - reprezentare simplu inlantuita folosind alocare dinamica/cmake-build-debug",
+		"source" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/SDA/Implementare Colectie - reprezentare simplu inlantuita folosind alocare dinamica"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

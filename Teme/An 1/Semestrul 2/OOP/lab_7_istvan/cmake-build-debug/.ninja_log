@@ -1,0 +1,5 @@
+# ninja log v5
+1	248	1712584223176935477	CMakeFiles/lab_7_istvan.dir/Pet.cpp.o	68f68623d777e4cf
+306	339	1712588135536346036	lab_7_istvan	e0a7ad1cf0b7eeeb
+2	306	1712588135503000270	CMakeFiles/lab_7_istvan.dir/main.cpp.o	3568114a5a692664
+2	196	1712588098665417131	CMakeFiles/lab_7_istvan.dir/Vector_iterator.cpp.o	83c9189ef390905

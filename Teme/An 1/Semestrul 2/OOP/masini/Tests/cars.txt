@@ -1,0 +1,6 @@
+BH32SDA, bmw, 2096, sedan
+BH16AMD, logan, 2093, sedan
+AB20ATH, mercedes, 2102, suv
+B450OOP, hyundai, 2104, hatch
+CJ45ZTP, vw, 2090, hatch
+BR75QTP, vw, 2098, van

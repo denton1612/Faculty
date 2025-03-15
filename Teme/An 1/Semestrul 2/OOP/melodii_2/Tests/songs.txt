@@ -1,0 +1,10 @@
+1, Hot, Maluma, 7
+2, Acasa, Smiley, 9
+3, Veste, Ian, 8
+4, Hot, Inna, 10
+5, Minim 2, Alex Velea, 8
+6, Cenusa, Roxen, 5
+7, Aia e, Smiley, 10
+8, La san, Ian, 10
+9, Summer, Inna, 6
+10, Diss, Alex Velea, 7

@@ -1,0 +1,42 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ;Se dau cuvintele A si B. Se cere dublucuvantul C:
+    14                                      ;bitii 0-3 ai lui C coincid cu bitii 5-8 ai lui B
+    15                                      ;bitii 4-10 ai lui C sunt invers fata de bitii 0-6 ai lui B
+    16                                      ;bitii 11-18 ai lui C sunt 1
+    17                                      ;bitii 19-31 ai lui C coincid cu bitii 3-15 ai lui B
+    18                                  
+    19 00000000 050F                        a dw 0000_1111_0000_0101b
+    20 00000002 50FA                        b dw 1111_1010_0101_0000b
+    21 00000004 00000000                    c dd 0
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25 00000000 66B8E001                        mov ax, 0000000111100000b ; cream o masca pentru a extrage bitii 5-8 ai lui b
+    26 00000004 662305[02000000]                and ax, [b] ; salvam bitii 5-8 ai lui b in ax
+    27 0000000B B105                            mov cl, 5 ; mutam acei biti pe poz 0-3 (poz pe care o vor avea in c)
+    28 0000000D 66D3E8                          shr ax, cl ; mutam acei biti pe poz 0-3 (poz pe care o vor avea in c) 
+    29 00000010 660905[04000000]                or [c], ax ; punem bitii corespunzatori pe poz 0-3 in c
+    30 00000017 66B880FF                        mov ax, 1111111110000000b ; cream o masca pentru a extrage bitii 0-6 ai lui b, insa in loc de zerouri vom avea 1 (pentru ca bitii in c trebuie sa fie invers 
+    31 0000001B 660B05[02000000]                or ax, [b] ; salvam bitii 0-6 ai lui b (in rest 1)
+    32 00000022 66F7D0                          not ax ; avem in ax bitii 0-6 inversati ai lui b
+    33 00000025 B104                            mov cl, 4
+    34 00000027 66C1E004                        shl ax, 4
+    35 0000002B 660905[04000000]                or [c], ax ; punem bitii corespunzatori pe poz 4-10 in c
+    36 00000032 B800F80700                      mov eax, 0000000000001111111100000000000b
+    37 00000037 0905[04000000]                  or [c], eax
+    38 0000003D 66B8F8FF                        mov ax, 1111111111111000b
+    39 00000041 662305[02000000]                and ax, [b]
+    40 00000048 660905[06000000]                or [c+2], ax
+    41 0000004F 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    42 00000051 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

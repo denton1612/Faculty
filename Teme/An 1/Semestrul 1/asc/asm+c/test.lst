@@ -1,0 +1,11 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  
+     4                                  
+     5                                  segment data use32 class=data
+     6 00000000 0E000A00                    a1 dw 14, 10
+     7 00000004 0010000004000000            a2 dd 1000h, $-a1
+     8                                  segment code use32 class=code
+     9                                      start:
+    10 00000000 B800000000                      mov eax, 0
+    11                                      

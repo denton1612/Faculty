@@ -1,0 +1,76 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, printf
+     6                                  import exit msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  %include "\\Mac\Home\Desktop\facultate teme\asc\tema_lab12 (multimodul)\permutare_circulara.asm"
+     1                              <1> %ifndef  _PERMUTARE_CIRCULARA_ASM_ ; continuam daca _FACTORIAL_ASM_ este nedefinit
+     2                              <1> %define  _PERMUTARE_CIRCULARA_ASM_ ; si ne asiguram ca devine definit
+     3                              <1> permutare_circulara:
+     4 00000000 8B442404            <1>     mov eax, [esp+4]
+     5 00000004 8B4C2408            <1>     mov ecx, [esp+8]
+     6 00000008 D3C8                <1>     ror eax, cl
+     7                              <1>     
+     8 0000000A C3                  <1>     ret
+     9                              <1> 
+    10                              <1> %endif
+    11                              <1> 
+     9                                  
+    10                                  segment data use32 class = data
+    11 0000000B AAAAFFFF                    a dd 0ffffaaaah
+    12 0000000F 4E756D6172756C2069-         format db 'Numarul in baza 16: %x', 10, 0
+    12 00000018 6E2062617A61203136-
+    12 00000021 3A2025780A00       
+    13 00000027 5065726D7574617265-         format_permutare db 'Permutarea %u: %x, %s', 10, 0
+    13 00000030 612025753A2025782C-
+    13 00000039 2025730A00         
+    14 0000003E 04000000                    ciclu dd 4
+    15 00000042 01000000                    permutare dd 1
+    16 00000046 FF00<rept>                  permutare_circulara_in_baza_2 times 32 db -1, 0
+    17 00000086 00000000                    permutare_circulara_in_baza_16 dd 0
+    18                                      
+    19                                  segment code use32 class = code
+    20                                      start:
+    21                                          ; apelez functia printf pentru a afisa reprezentarea in baza 16 a valorii a
+    22 00000000 FF35[0B000000]                  push dword [a]
+    23 00000006 68[0F000000]                    push format
+    24 0000000B FF15[00000000]                  call [printf]
+    25 00000011 83C408                          add esp, 4*2
+    26                                          
+    27                                          repeta:
+    28 00000014 FF35[3E000000]                      push dword [ciclu]
+    29 0000001A FF35[0B000000]                      push dword [a]
+    30 00000020 E8(00000000)                        call permutare_circulara
+    31 00000025 83C408                              add esp, 4*2
+    32 00000028 A3[86000000]                        mov [permutare_circulara_in_baza_16], eax
+    33 0000002D 89C3                                mov ebx, eax
+    34 0000002F B000                                mov al, 0
+    35 00000031 BF[46000000]                        mov edi, permutare_circulara_in_baza_2
+    36 00000036 B920000000                          mov ecx, 32
+    37                                              roteste:
+    38 0000003B D1D3                                    rcl ebx, 1
+    39 0000003D 1400                                    adc al, 0
+    40 0000003F 0430                                    add al, '0'
+    41 00000041 AA                                      stosb
+    42 00000042 30C0                                    xor al, al
+    43 00000044 E2F5                                loop roteste
+    44 00000046 68[46000000]                        push dword permutare_circulara_in_baza_2
+    45 0000004B FF35[86000000]                      push dword [permutare_circulara_in_baza_16]
+    46 00000051 FF35[42000000]                      push dword [permutare]
+    47 00000057 68[27000000]                        push format_permutare
+    48 0000005C FF15[00000000]                      call [printf]
+    49 00000062 83C408                              add esp, 4*2
+    50 00000065 8305[3E000000]04                    add dword [ciclu], 4
+    51 0000006C FF05[42000000]                      inc dword [permutare]
+    52 00000072 833D[3E000000]1F                    cmp dword [ciclu], 31
+    53 00000079 7702                                ja final
+    54 0000007B EB97                            jmp repeta
+    55                                          
+    56                                      final:
+    57 0000007D 6A00                            push dword 0
+    58 0000007F FF15[00000000]                  call [exit]
+    59                                              
+    60                                          
+    61                                          

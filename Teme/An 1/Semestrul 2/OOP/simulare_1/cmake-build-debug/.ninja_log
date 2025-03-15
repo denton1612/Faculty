@@ -1,0 +1,99 @@
+# ninja log v5
+2	48	1716039592049983747	simulare_1_autogen/timestamp	2bc9c73e0e480775
+49	306	1716039592312113773	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+2	48	1716039592049983747	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+48	69	1716039592077235911	CMakeFiles/simulare_1.dir/simulare_1_autogen/mocs_compilation.cpp.o	a559a85d6a7352f3
+2	48	1716039592049983747	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+49	345	1716039592351720254	CMakeFiles/simulare_1.dir/main.cpp.o	b13bd6e349097247
+2	48	1716039592049983747	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+49	299	1716039592304798514	CMakeFiles/simulare_1.dir/domain/placaDeBaza.cpp.o	ed0fb5432fb8a909
+49	302	1716039592306307940	CMakeFiles/simulare_1.dir/domain/procesor.cpp.o	6851ce007b181d45
+345	447	1716039592453381899	simulare_1	a51b35f3e9a5ea35
+5	33	1716192123143957962	simulare_1_autogen/timestamp	2bc9c73e0e480775
+5	33	1716192123143957962	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+5	33	1716192123143957962	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+5	33	1716192123143957962	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+35	456	1716192123563221310	CMakeFiles/simulare_1.dir/validare/eroare.cpp.o	6aba879c8e1efaee
+34	459	1716192123565989599	CMakeFiles/simulare_1.dir/domain/procesor.cpp.o	6851ce007b181d45
+35	459	1716192123565984099	CMakeFiles/simulare_1.dir/domain/placaDeBaza.cpp.o	ed0fb5432fb8a909
+35	589	1716192123696590320	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+35	597	1716192123704793147	CMakeFiles/simulare_1.dir/utils/utils.cpp.o	1f4b2e604c76d67b
+35	634	1716192123741385198	CMakeFiles/simulare_1.dir/repository/repo.cpp.o	8b96ad00b04c30ab
+634	782	1716192123888250989	simulare_1	d6c774893d6743e
+5	27	1716192133593972027	simulare_1_autogen/timestamp	2bc9c73e0e480775
+5	27	1716192133593972027	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+5	27	1716192133593972027	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+5	27	1716192133593972027	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+28	367	1716192133929876738	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+367	460	1716192134022316992	simulare_1	d6c774893d6743e
+4	28	1716192158910986487	simulare_1_autogen/timestamp	2bc9c73e0e480775
+4	28	1716192158910986487	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+4	28	1716192158910986487	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+4	28	1716192158910986487	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+29	411	1716192159291122869	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+411	502	1716192159381464333	simulare_1	d6c774893d6743e
+3	25	1716192176949739325	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	25	1716192176949739325	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	25	1716192176949739325	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	25	1716192176949739325	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+25	333	1716192177255329437	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+333	424	1716192177346486067	simulare_1	d6c774893d6743e
+3	26	1716192255338045529	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	26	1716192255338045529	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	26	1716192255338045529	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	26	1716192255338045529	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+27	351	1716192255659980960	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+4	27	1716192260693820553	simulare_1_autogen/timestamp	2bc9c73e0e480775
+4	27	1716192260693820553	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+4	27	1716192260693820553	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+4	27	1716192260693820553	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+28	390	1716192261053369077	CMakeFiles/simulare_1.dir/repository/repo.cpp.o	8b96ad00b04c30ab
+391	486	1716192261149781953	simulare_1	d6c774893d6743e
+3	24	1716192318277654962	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	24	1716192318277654962	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	24	1716192318277654962	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	24	1716192318277654962	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+24	344	1716192318594990731	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+344	436	1716192318687330610	simulare_1	d6c774893d6743e
+3	26	1716192333056174017	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	26	1716192333056174017	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	26	1716192333056174017	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	26	1716192333056174017	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+27	348	1716192333376364117	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+348	436	1716192333464813499	simulare_1	d6c774893d6743e
+3	27	1716192495882031882	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	27	1716192495882031882	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	27	1716192495882031882	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	27	1716192495882031882	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+28	408	1716192496259359601	CMakeFiles/simulare_1.dir/utils/utils.cpp.o	1f4b2e604c76d67b
+408	502	1716192496353999257	simulare_1	d6c774893d6743e
+4	27	1716192555581555934	simulare_1_autogen/timestamp	2bc9c73e0e480775
+4	27	1716192555581555934	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+4	27	1716192555581555934	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+4	27	1716192555581555934	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+27	407	1716192555959054794	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+407	496	1716192556047711980	simulare_1	d6c774893d6743e
+3	24	1716192561991049872	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	24	1716192561991049872	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	24	1716192561991049872	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	24	1716192561991049872	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+25	328	1716192562291998618	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+328	417	1716192562382226584	simulare_1	d6c774893d6743e
+3	27	1716192850486083164	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	27	1716192850486083164	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	27	1716192850486083164	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	27	1716192850486083164	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+28	357	1716192850813094793	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+357	450	1716192850905761532	simulare_1	d6c774893d6743e
+3	25	1716192854816392852	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	25	1716192854816392852	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	25	1716192854816392852	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	25	1716192854816392852	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+25	340	1716192855129505922	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+340	431	1716192855220522924	simulare_1	d6c774893d6743e
+3	23	1716192863810307058	simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	23	1716192863810307058	simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+3	23	1716192863810307058	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/timestamp	2bc9c73e0e480775
+3	23	1716192863810307058	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_1/cmake-build-debug/simulare_1_autogen/mocs_compilation.cpp	2bc9c73e0e480775
+24	343	1716192864127027391	CMakeFiles/simulare_1.dir/teste/teste.cpp.o	560d209c31f45286
+343	437	1716192864221815864	simulare_1	d6c774893d6743e

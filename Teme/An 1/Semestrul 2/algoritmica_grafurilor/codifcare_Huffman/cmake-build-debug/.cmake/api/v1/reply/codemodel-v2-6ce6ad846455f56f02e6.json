@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "codifcare_Huffman",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "codifcare_Huffman::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-codifcare_Huffman-Debug-9aa0abfdcc45e08f10e0.json",
+					"name" : "codifcare_Huffman",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/codifcare_Huffman/cmake-build-debug",
+		"source" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/algoritmica_grafurilor/codifcare_Huffman"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

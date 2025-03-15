@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "masini",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "masini::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-masini-Debug-5b3bf8a8d39865e4c09c.json",
+					"name" : "masini",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "masini_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-masini_autogen-Debug-59889ff1420144eabd10.json",
+					"name" : "masini_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "masini_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-masini_autogen_timestamp_deps-Debug-bd5c5dfc607e0927b1fc.json",
+					"name" : "masini_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini/cmake-build-debug-coverage",
+		"source" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/masini"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,5 @@
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu/cmake-build-debug/CMakeFiles/exercitiu.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu/cmake-build-debug/CMakeFiles/exercitiu_autogen_timestamp_deps.dir
+/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/exercitiu/cmake-build-debug/CMakeFiles/exercitiu_autogen.dir

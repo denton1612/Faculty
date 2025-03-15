@@ -1,0 +1,35 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, scanf, printf
+     6                                  import exit msvcrt.dll
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  ; Sa se citeasca de la tastatura doua numere a si b (in baza 10) si sa se calculeze a/b. Catul impartirii se va salva in memorie in variabila "rezultat" (definita in segmentul de date). Valorile se considera cu semn
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 00000000                    a dd 0
+    14 00000004 00000000                    b dd 0
+    15 00000008 256425640000                format db '%d%d', 0, 0
+    16 0000000E 2564000000                  format1 db '%d', 0, 0, 0
+    17 00000013 0000                        rezultat dw 0
+    18                                      
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 68[04000000]                    push dword b
+    22 00000005 68[00000000]                    push dword a
+    23 0000000A 68[08000000]                    push dword format
+    24 0000000F FF15[00000000]                  call [scanf]
+    25 00000015 83C40C                          add esp, 4*3
+    26                                          
+    27 00000018 A1[00000000]                    mov eax, [a]
+    28 0000001D 99                              cdq
+    29 0000001E F73D[04000000]                  idiv dword [b]
+    30 00000024 A3[13000000]                    mov [rezultat], eax
+    31                                  
+    32 00000029 FF35[13000000]                  push dword [rezultat]
+    33 0000002F 68[0E000000]                    push dword format1
+    34 00000034 FF15[00000000]                  call [printf]
+    35 0000003A 83C408                          add esp, 4*2

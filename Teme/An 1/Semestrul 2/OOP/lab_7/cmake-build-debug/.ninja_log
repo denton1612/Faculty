@@ -1,0 +1,12 @@
+# ninja log v5
+420	663	1712588355761101807	CMakeFiles/lab_7.dir/List/iterator.cpp.o	d5eab184d2660db2
+4	452	1712588355550043705	CMakeFiles/lab_7.dir/UI/ui.cpp.o	7e7aab261f3e683b
+3	469	1712588355566527003	CMakeFiles/lab_7.dir/Tests/tests.cpp.o	ba261d47899096d1
+673	709	1712588355807943306	lab_7	fc85a03408d19373
+3	448	1712588355543206400	CMakeFiles/lab_7.dir/Repository/repository.cpp.o	682091ffd1eab30
+3	447	1712588355542174767	CMakeFiles/lab_7.dir/Service/service.cpp.o	5fea034c4144bac1
+435	673	1712588355770826718	CMakeFiles/lab_7.dir/Validare/Validare.cpp.o	b564de1b0fd3abb
+3	435	1712588355530978094	CMakeFiles/lab_7.dir/main.cpp.o	cbaf1496ef3541a0
+4	420	1712588355515880182	CMakeFiles/lab_7.dir/List/list.cpp.o	d0f230e8322b2d12
+2	351	1712571877146078135	CMakeFiles/lab_7.dir/Domain/medicament.cpp.o	29a11af7bfc96dc7
+1	42	1729532678555435321	build.ninja	7dabab1f94266ac6

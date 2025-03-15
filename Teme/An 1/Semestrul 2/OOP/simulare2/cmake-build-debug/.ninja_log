@@ -1,0 +1,7 @@
+# ninja log v5
+4	321	1716194761046243519	CMakeFiles/simulare2.dir/domain/Apartament.cpp.o	a52d32762698c2c1
+3	381	1716195799071884943	CMakeFiles/simulare2.dir/teste/teste.cpp.o	9e681a4438b66c13
+3	330	1716195605207795456	CMakeFiles/simulare2.dir/main.cpp.o	7463d785fa260609
+3	408	1716195691368857021	CMakeFiles/simulare2.dir/repository/Lista.cpp.o	a5e93b02f9524d96
+381	414	1716195799105506225	simulare2	7d9f6982ebb5cdaa
+4	319	1716195605196333834	CMakeFiles/simulare2.dir/utils/utils.cpp.o	84de40c70009671c

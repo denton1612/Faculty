@@ -1,0 +1,62 @@
+# ninja log v5
+26	841	1716215139347812826	CMakeFiles/simulareOficial.dir/main.cpp.o	652b61efc9d15f6e
+25	397	1716215089881058077	CMakeFiles/simulareOficial.dir/repository/Lista.cpp.o	ecfdb7e5bae48142
+849	942	1716215359880404408	simulareOficial	f0241b0f8cef2e64
+38	294	1716212575798648503	CMakeFiles/simulareOficial.dir/utils/utils.cpp.o	e00d3204d6eaf16e
+25	349	1716214254257410253	CMakeFiles/simulareOficial.dir/domain/Elev.cpp.o	6d9ff199c221becc
+4	25	1716215358965592281	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+25	433	1716215089917919093	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	1a55f524f1562f07
+25	849	1716215359785629837	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+36	65	1716212575569617501	CMakeFiles/simulareOficial.dir/simulareOficial_autogen/mocs_compilation.cpp.o	841fdf7b39d4eacf
+26	482	1716215089966585571	CMakeFiles/simulareOficial.dir/service/Service.cpp.o	833d27e7724f2d3d
+4	25	1716215358965592281	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+4	25	1716215358965592281	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+4	25	1716215358965592281	simulareOficial_autogen/timestamp	482f750495171af6
+5	26	1716215408366016193	simulareOficial_autogen/timestamp	482f750495171af6
+5	26	1716215408366016193	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+5	26	1716215408366016193	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+5	26	1716215408366016193	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+27	858	1716215409193823112	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+858	948	1716215409285649380	simulareOficial	f0241b0f8cef2e64
+5	29	1716215473373471966	simulareOficial_autogen/timestamp	482f750495171af6
+5	29	1716215473373471966	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+5	29	1716215473373471966	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+5	29	1716215473373471966	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+29	915	1716215474254823589	CMakeFiles/simulareOficial.dir/main.cpp.o	652b61efc9d15f6e
+30	924	1716215474263645581	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+924	1015	1716215474357394356	simulareOficial	f0241b0f8cef2e64
+4	26	1716215491527180323	simulareOficial_autogen/timestamp	482f750495171af6
+4	26	1716215491527180323	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+4	26	1716215491527180323	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+4	26	1716215491527180323	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+27	956	1716215492451499486	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+27	989	1716215492485353657	CMakeFiles/simulareOficial.dir/main.cpp.o	652b61efc9d15f6e
+989	1108	1716215492607018248	simulareOficial	f0241b0f8cef2e64
+5	27	1716215762837140379	simulareOficial_autogen/timestamp	482f750495171af6
+5	27	1716215762837140379	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+5	27	1716215762837140379	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+5	27	1716215762837140379	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+28	392	1716215763184634834	CMakeFiles/simulareOficial.dir/domain/Elev.cpp.o	6d9ff199c221becc
+29	489	1716215763284251132	CMakeFiles/simulareOficial.dir/repository/Lista.cpp.o	ecfdb7e5bae48142
+28	559	1716215763363822395	CMakeFiles/simulareOficial.dir/teste/teste.cpp.o	1a55f524f1562f07
+29	596	1716215763401870124	CMakeFiles/simulareOficial.dir/service/Service.cpp.o	833d27e7724f2d3d
+28	1113	1716215763917096762	CMakeFiles/simulareOficial.dir/main.cpp.o	652b61efc9d15f6e
+29	1170	1716215763974990817	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+1170	1297	1716215764105240316	simulareOficial	f0241b0f8cef2e64
+5	25	1716216055602671430	simulareOficial_autogen/timestamp	482f750495171af6
+5	25	1716216055602671430	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+5	25	1716216055602671430	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+5	25	1716216055602671430	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+25	909	1716216056482096921	CMakeFiles/simulareOficial.dir/main.cpp.o	652b61efc9d15f6e
+26	912	1716216056484599972	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+912	1013	1716216056589016455	simulareOficial	f0241b0f8cef2e64
+4	26	1716216301056366480	simulareOficial_autogen/timestamp	482f750495171af6
+4	26	1716216301056366480	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+4	26	1716216301056366480	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+4	26	1716216301056366480	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+6	28	1716217166971376577	simulareOficial_autogen/timestamp	482f750495171af6
+6	28	1716217166971376577	simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+6	28	1716217166971376577	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/timestamp	482f750495171af6
+6	28	1716217166971376577	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulareOficial/cmake-build-debug-coverage/simulareOficial_autogen/mocs_compilation.cpp	482f750495171af6
+28	987	1716217167926413940	CMakeFiles/simulareOficial.dir/gui/GUI.cpp.o	83f071fad0639cc3
+987	1091	1716217168032124178	simulareOficial	f0241b0f8cef2e64

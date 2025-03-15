@@ -1,0 +1,54 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit, scanf, printf
+     5                                  import exit msvcrt.dll
+     6                                  import scanf msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  
+     9                                  ; Sa se citeasca de la tastatura un octet si un cuvant. Sa se afiseze pe ecran daca bitii octetului citit se regasesc consecutiv printre bitii cuvantului
+    10                                  
+    11                                  segment data use32 class=data
+    12 00000000 <res 00000004>              a resd 1
+    13 00000004 <res 00000004>              b resd 1
+    14 00000008 2564256400                  formats db '%d%d', 0
+    15 0000000D 646100                      mesaj1 db 'da', 0
+    16 00000010 6E7500                      mesaj0 db 'nu', 0
+    17 00000013 257300                      formatp db '%s', 0
+    18 00000016 0001                        d dw 100h
+    19                                      
+    20                                  segment code use32 class=code
+    21                                      start:
+    22 00000000 68[04000000]                push dword b
+    23 00000005 68[00000000]                push dword a
+    24 0000000A 68[08000000]                push dword formats
+    25 0000000F FF15[00000000]              call [scanf]
+    26 00000015 83C40C                      add esp, 4*3
+    27                                  
+    28 00000018 B908000000                  mov ecx, 8
+    29                                      repeta:
+    30 0000001D 66A1[04000000]                  mov ax, word [b]
+    31 00000023 8A1D[00000000]                  mov bl, byte [a]
+    32 00000029 660FB6DB                        movzx bx, bl
+    33 0000002D 6629D8                          sub ax, bx
+    34 00000030 66BA0000                        mov dx, 0
+    35 00000034 66F735[16000000]                div word [d]
+    36 0000003B 6683FA00                        cmp dx, 0
+    37 0000003F 740B                            je da
+    38 00000041 66D12D[04000000]                shr word [b], 1
+    39 00000048 E2D3                        loop repeta
+    40 0000004A EB15                        jmp nu
+    41                                      da:
+    42 0000004C 68[0D000000]                    push dword mesaj1
+    43 00000051 68[13000000]                    push formatp
+    44 00000056 FF15[00000000]                  call [printf]
+    45 0000005C 83C408                          add esp, 4*2
+    46 0000005F EB13                        jmp sfarsit
+    47                                      nu:
+    48 00000061 68[10000000]                    push dword mesaj0
+    49 00000066 68[13000000]                    push formatp
+    50 0000006B FF15[00000000]                  call [printf]
+    51 00000071 83C408                          add esp, 4*2
+    52                                      sfarsit:
+    53 00000074 6A00                            push dword 0
+    54 00000076 FF15[00000000]                  call [exit]

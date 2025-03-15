@@ -1,0 +1,5 @@
+1 eroilor, 3, 3, XX-X--X--
+3 baciu, 2, 3, X--XXX
+10 eroilor, 2, 4, --XX--XX
+6 motilor, 3, 3, XXXX-----
+25 memo, 2, 1, X-

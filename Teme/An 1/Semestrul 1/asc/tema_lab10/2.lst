@@ -1,0 +1,88 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  
+     4                                  extern exit, printf, fopen, fread, fclose
+     5                                  import exit msvcrt.dll
+     6                                  import printf msvcrt.dll
+     7                                  import fopen msvcrt.dll
+     8                                  import fread msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  
+    11                                  segment data use32 class=data
+    12                                      ; Se da un fisier text. Sa se citeasca continutul fisierului, sa se contorizeze numarul de vocale si sa se afiseze aceasta valoare. Numele fisierului text este definit in segmentul de date.
+    13 00000000 75                          formatScriere db 'u'
+    14 00000001 00                          nr_vocale db 0
+    15 00000002 636F6E74696E75742E-         fisier db "continut.txt", 0
+    15 0000000B 74787400           
+    16 0000000F 7200                        modalitate db "r", 0
+    17 00000011 6165696F754145494F-         sir_vocale db "aeiouAEIOU"
+    17 0000001A 55                 
+    18                                      len_voc equ $-sir_vocale
+    19                                      len equ 100
+    20 0000001B FFFFFFFF                    descriptor_fisier dd -1
+    21 0000001F 00<rept>                    text times len db 0
+    22                                      
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                      ;deschidem fisierul 'continut.txt' pentru citire(r)
+    26 00000000 68[0F000000]                    push dword modalitate
+    27 00000005 68[02000000]                    push dword fisier
+    28 0000000A FF15[00000000]                  call [fopen]
+    29 00000010 83C408                          add esp, 8
+    30                                          
+    31                                      ;stocam descriptorul de fisier in memorie si trecem la sfarsitul programului daca a esuat deschiderea (eax=0)
+    32 00000013 A3[1B000000]                    mov [descriptor_fisier], eax
+    33 00000018 83F800                          cmp eax, 0
+    34 0000001B 746D                            je final
+    35                                          
+    36                                      ;citim din fisier si salvam in memorie 
+    37 0000001D FF35[1B000000]                  push dword [descriptor_fisier]
+    38 00000023 6A64                            push dword len
+    39 00000025 6A01                            push dword 1
+    40 00000027 68[1F000000]                    push text
+    41 0000002C FF15[00000000]                  call [fread]
+    42 00000032 83C410                          add esp, 4*4
+    43                                          
+    44                                      ;vom parcurge tot textul citit (lungimea 100) de la offset ul text, caracter cu caracter (byte cu byte), dupa care vom verifica daca caracterul curenta este vocala
+    45                                      ;in caz afirmativ, incrementam valoarea de la offset ul nr_vocale, dupa care trecem la urmatorul caracter si tot asa
+    46 00000035 B964000000                      mov ecx, len
+    47 0000003A BE[1F000000]                    mov esi, text ; pregatim incarcarea in al a caracterelor
+    48                                      
+    49                                      ;parcurgem tot sirul de caractere
+    50                                          repeta:
+    51 0000003F 51                                  push ecx
+    52 00000040 B90A000000                          mov ecx, len_voc ; pentru parcurgerea sirului de vocale
+    53 00000045 AC                                  lodsb 
+    54 00000046 88C3                                mov bl, al ; memoram in bl caracterul curent
+    55 00000048 56                                  push esi
+    56 00000049 BE[11000000]                        mov esi, sir_vocale ; pregatim incarcarea in al a vocalelor 
+    57                                              ; incarcam in al vocala curenta din sirul de vocale si verificam egalitatea caracterului curent din fisier cu aceasta
+    58                                              verifica_voc:
+    59 0000004E AC                                      lodsb 
+    60 0000004F 38D8                                    cmp al, bl
+    61 00000051 E0FB                                loopne verifica_voc ; ne oprim din loop cand caracterul curent este chiar o VOCALA
+    62 00000053 5E                                  pop esi
+    63 00000054 80FB55                              cmp bl, 'U'
+    64 00000057 7405                                je vocU
+    65 00000059 83F900                              cmp ecx, 0 ; daca ecx != 0, inseamna ca caracterul era o VOCALA (s-a oprit loop ul inainte de a ajunge la finalul sirului de voc => caracterul este VOCALA)
+    66 0000005C 7406                                je non_voc 
+    67                                              vocU:
+    68 0000005E FE05[01000000]                          inc byte [nr_vocale]
+    69                                              non_voc: ; tratam cazul in care nu a fost vocala
+    70 00000064 59                                  pop ecx
+    71 00000065 E2D8                            loop repeta
+    72                                          
+    73 00000067 FF35[1B000000]                  push dword [descriptor_fisier]
+    74 0000006D FF15[00000000]                  call [fclose]
+    75 00000073 83C404                          add esp, 4
+    76                                         
+    77 00000076 FF35[01000000]                  push dword [nr_vocale]
+    78 0000007C 68[00000000]                    push dword formatScriere
+    79 00000081 FF15[00000000]                  call [printf]
+    80 00000087 83C408                          add esp, 8
+    81                                          
+    82                                          final:
+    83 0000008A 6A00                            push dword 0
+    84 0000008C FF15[00000000]                  call [exit]
+    85                                          
+    86                                          

@@ -1,0 +1,32 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, scanf, printf
+     6                                  import exit msvcrt.dll
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  ; Sa se citeasca de la tastatura un numar in baza 10 si sa se afiseze valoarea acelui numar in baza 16.
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 64000000                    a dd 100
+    14 00000004 2564                        formats db '%d'
+    15 00000006 4E756D6172756C2025-         formatp db 'Numarul %d in baza 10 este %x in baza 16'
+    15 0000000F 6420696E2062617A61-
+    15 00000018 203130206573746520-
+    15 00000021 257820696E2062617A-
+    15 0000002A 61203136           
+    16                                      
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                          
+    20                                          
+    21 00000000 FF35[00000000]                  push dword [a]
+    22 00000006 FF35[00000000]                  push dword [a]
+    23 0000000C 68[06000000]                    push formatp
+    24 00000011 FF15[00000000]                  call [printf]
+    25 00000017 83C40C                          add esp, 4*3
+    26                                          
+    27 0000001A 6A00                            push dword 0
+    28 0000001C FF15[00000000]                  call [exit]

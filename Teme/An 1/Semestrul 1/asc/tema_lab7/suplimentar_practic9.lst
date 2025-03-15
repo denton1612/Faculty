@@ -1,0 +1,57 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit
+     6                                  import exit msvcrt.dll
+     7                                  
+     8                                  ; Se da un sir S de dublucuvinte.
+     9                                  ; Sa se obtina sirul D format din octetii dublucuvintelor din sirul S sortati in ordine crescatoare in interpretarea fara semn.
+    10                                  
+    11                                  segment data use32 class=data
+    12 00000000 07563412153C2B1A            s dd 12345607h, 1A2B3C15h
+    13                                      l equ $-s
+    14 00000008 00                          ordonat db 0
+    15 00000009 00                          d db 0
+    16                                      
+    17                                  segment code use32 class=code
+    18                                      interschimbare:
+    19 00000000 8A442404                        mov al, [esp+4]
+    20 00000004 8A5C2408                        mov bl, [esp+8]
+    21 00000008 38D8                            cmp al, bl
+    22 0000000A 7700                            ja final
+    23                                          final:
+    24 0000000C C20800                          ret 8
+    25                                      start:
+    26 0000000F B908000000                      mov ecx, l
+    27 00000014 83E901                          sub ecx, 1
+    28                                          repeta:
+    29 00000017 C605[08000000]01                    mov byte [ordonat], 1
+    30 0000001E B908000000                          mov ecx, l
+    31 00000023 83E901                              sub ecx, 1
+    32 00000026 BE[00000000]                        mov esi, s
+    33 0000002B BF[01000000]                        mov edi, s+1
+    34                                              repeta1:
+    35 00000030 A6                                      cmpsb
+    36 00000031 7613                                    jbe ok
+    37 00000033 8A46FF                                  mov al, [esi-1]
+    38 00000036 8A5FFF                                  mov bl, [edi-1]
+    39 00000039 885EFF                                  mov [esi-1], bl
+    40 0000003C 8847FF                                  mov [edi-1], al
+    41 0000003F C605[08000000]00                        mov byte [ordonat], 0
+    42                                                  ok:
+    43 00000046 E2E8                                loop repeta1
+    44 00000048 803D[08000000]01                    cmp byte [ordonat], 1
+    45 0000004F 7402                                je gata
+    46 00000051 EBC4                            jmp repeta
+    47                                          gata:
+    48 00000053 BE[00000000]                    mov esi, s
+    49 00000058 BF[09000000]                    mov edi, d
+    50 0000005D B908000000                      mov ecx, l
+    51                                          muta:
+    52 00000062 A4                                  movsb
+    53 00000063 E2FD                            loop muta
+    54 00000065 6A00                        push dword 0
+    55 00000067 FF15[00000000]              call [exit]
+    56                                          
+    57                                          

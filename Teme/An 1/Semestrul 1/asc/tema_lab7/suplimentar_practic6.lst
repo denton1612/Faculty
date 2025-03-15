@@ -1,0 +1,35 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit
+     6                                  import exit msvcrt.dll
+     7                                  
+     8                                  ; Se da un sir de dublucuvinte. Sa se obtina sirul format din octetii superiori ai
+     9                                  ;cuvitelor superioare din elementele sirului de dublucuvinte care sunt divizibili cu 3.
+    10                                  
+    11                                  segment data use32 class=data
+    12 00000000 785634124D3C2B2176-         s dd 12345678h, 212B3C4Dh, 0FE98DC76h
+    12 00000009 DC98FE             
+    13 0000000C 03                          ls db ($-s)/4
+    14 0000000D 03                          trei db 3
+    15 0000000E 00                          d db 0 
+    16                                      
+    17                                  segment code use32 class=code
+    18                                      start:
+    19 00000000 8A0D[0C000000]                  mov cl, [ls]
+    20 00000006 0FB6C9                          movzx ecx, cl
+    21 00000009 BE[03000000]                    mov esi, s+3
+    22 0000000E BF[0E000000]                    mov edi, d
+    23                                          repeta:
+    24 00000013 AC                                  lodsb
+    25 00000014 83C603                              add esi, 3
+    26 00000017 88C3                                mov bl, al
+    27 00000019 660FB6C0                            movzx ax, al
+    28 0000001D F635[0D000000]                      div byte [trei]
+    29 00000023 80FC00                              cmp ah, 0
+    30 00000026 7503                                jnz nu_divide_3
+    31 00000028 88D8                                mov al, bl
+    32 0000002A AA                                  stosb
+    33                                              nu_divide_3:
+    34 0000002B E2E6                            loop repeta

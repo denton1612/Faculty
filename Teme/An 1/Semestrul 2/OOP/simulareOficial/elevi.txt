@@ -1,0 +1,5 @@
+1234, Stiube Denis, Scoala 1, dm
+1432, Alex Marin, Scoala 4, fj
+2314, Robert Marius, Scoala 5, i
+4356, Darius Olaru, Scoala 7, fm
+6599, Costel Dobrin, Scoala 10, m

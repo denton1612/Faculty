@@ -1,0 +1,38 @@
+# ninja log v5
+721	809	1714219377956948525	QT	2ea914dfba4f4d3b
+25	721	1714219377866615935	CMakeFiles/QT.dir/main.cpp.o	9cfa1b5758fd1e93
+4	25	1714219377174583929	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+4	25	1714219377174583929	QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+4	25	1714219377174583929	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/timestamp	90b218fae4d9e1e5
+40	58	1714053971482201903	CMakeFiles/QT.dir/QT_autogen/mocs_compilation.cpp.o	5882a138e1664840
+4	25	1714219377174583929	QT_autogen/timestamp	90b218fae4d9e1e5
+6	27	1714219389419837404	QT_autogen/timestamp	90b218fae4d9e1e5
+6	27	1714219389419837404	QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+6	27	1714219389419837404	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/timestamp	90b218fae4d9e1e5
+6	27	1714219389419837404	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+28	725	1714219390113426338	CMakeFiles/QT.dir/main.cpp.o	9cfa1b5758fd1e93
+725	813	1714219390204320683	QT	2ea914dfba4f4d3b
+6	31	1714219820255306307	QT_autogen/timestamp	90b218fae4d9e1e5
+6	31	1714219820255306307	QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+6	31	1714219820255306307	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/timestamp	90b218fae4d9e1e5
+6	31	1714219820255306307	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+31	811	1714219821032339536	CMakeFiles/QT.dir/main.cpp.o	9cfa1b5758fd1e93
+812	905	1714219821127103513	QT	2ea914dfba4f4d3b
+7	33	1714222222937793633	QT_autogen/timestamp	90b218fae4d9e1e5
+7	33	1714222222937793633	QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+7	33	1714222222937793633	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/timestamp	90b218fae4d9e1e5
+7	33	1714222222937793633	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+34	829	1714222223728734131	CMakeFiles/QT.dir/main.cpp.o	9cfa1b5758fd1e93
+829	984	1714222223884802812	QT	2ea914dfba4f4d3b
+7	35	1714224012148533919	QT_autogen/timestamp	90b218fae4d9e1e5
+7	35	1714224012148533919	QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+7	35	1714224012148533919	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/timestamp	90b218fae4d9e1e5
+7	35	1714224012148533919	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+35	895	1714224013004203117	CMakeFiles/QT.dir/main.cpp.o	9cfa1b5758fd1e93
+895	1048	1714224013157464342	QT	2ea914dfba4f4d3b
+5	26	1714224125392078257	QT_autogen/timestamp	90b218fae4d9e1e5
+5	26	1714224125392078257	QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+5	26	1714224125392078257	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/timestamp	90b218fae4d9e1e5
+5	26	1714224125392078257	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/QT_autogen/mocs_compilation.cpp	90b218fae4d9e1e5
+27	787	1714224126148988614	CMakeFiles/QT.dir/main.cpp.o	9cfa1b5758fd1e93
+787	878	1714224126242082617	QT	2ea914dfba4f4d3b

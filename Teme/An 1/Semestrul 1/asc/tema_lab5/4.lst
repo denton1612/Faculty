@@ -1,0 +1,36 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  segment data use32 class=data
+     8                                      ; a-byte; b-doubleword; c-qword
+     9 00000000 0A                          a db 10
+    10 00000001 9CFFFFFF                    b dd -100
+    11 00000005 DC05000000000000            c dq 1500
+    12                                      
+    13                                  segment code use32 class=code
+    14                                      start
+    14          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    15                                      ; c+(a*a-b+7)/(2+a)
+    16 00000000 8B1D[05000000]              mov ebx, [c]
+    17 00000006 8B0D[09000000]              mov ecx, [c+4]
+    18 0000000C A0[00000000]                mov al, [a]
+    19 00000011 F62D[00000000]              imul byte [a]
+    20 00000017 98                          cwde 
+    21 00000018 2B05[01000000]              sub eax, [b]
+    22 0000001E 83C007                      add eax, 7
+    23 00000021 50                          push eax
+    24 00000022 A0[00000000]                mov al, [a]
+    25 00000027 6698                        cbw 
+    26 00000029 6683C002                    add ax, 2
+    27 0000002D 6689C3                      mov bx, ax
+    28 00000030 58                          pop eax
+    29 00000031 66F7FB                      idiv bx
+    30 00000034 98                          cwde
+    31 00000035 99                          cdq
+    32 00000036 01D8                        add eax, ebx
+    33 00000038 11CA                        adc edx, ecx
+    34                                      
+    35                                      

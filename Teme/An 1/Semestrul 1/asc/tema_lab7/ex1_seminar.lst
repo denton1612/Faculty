@@ -1,0 +1,63 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  
+     4                                  extern exit, scanf, printf
+     5                                  import exit msvcrt.dll
+     6                                  import scanf msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  
+     9                                  segment data use32 class=data
+    10 00000000 00000000                	a dd 0
+    11 00000004 4461746920756E2069-         mesaj db 'Dati un intreg: ', 0
+    11 0000000D 6E747265673A2000   
+    12 00000015 256400                      format db "%d", 0
+    13                                      
+    14 00000018 0000<rept>                  biti times 32 db 0, 0
+    15 00000058 25643A2025730D0A00          format_afisare db "%d: %s", 13, 10, 0
+    16                                      
+    17                                  ; 1. Scrieți un program care citește de la tastatură un număr întreg și îl afișează în baza 2.
+    18                                  segment code use32 class=code
+    19                                      start:
+    20                                      repeta:
+    21                                          ; afisez mesaj
+    22                                          ; printf(mesaj)
+    23 00000000 68[04000000]                    push dword mesaj
+    24 00000005 FF15[00000000]                  call [printf]
+    25 0000000B 83C404                          add esp, 1*4
+    26                                          
+    27                                          ; citesc numarul
+    28                                          ; scanf(format, &a)
+    29 0000000E 68[00000000]                    push dword a
+    30 00000013 68[15000000]                    push dword format
+    31 00000018 FF15[00000000]                  call [scanf]
+    32 0000001E 83C408                          add esp, 2*4
+    33                                          
+    34                                          ; verific daca s-a introdus valoarea 0
+    35 00000021 8B15[00000000]                  mov edx, [a]
+    36 00000027 83FA00                          cmp edx, 0
+    37 0000002A 742F                            je final
+    38                                          
+    39                                          ; obtin reprezentarea in baza 2
+    40 0000002C B920000000                      mov ecx, 32
+    41 00000031 FC                              cld
+    42 00000032 BF[18000000]                    mov edi, biti
+    43                                          verifica:
+    44 00000037 30C0                                xor al, al
+    45 00000039 D1E2                                shl edx, 1
+    46 0000003B 1430                                adc al, '0'
+    47 0000003D AA                                  stosb
+    48 0000003E E2F7                                loop verifica
+    49                                          
+    50                                          ; afisez sirul de biti
+    51                                          ; printf(format_afisare, a, biti)
+    52 00000040 68[18000000]                    push dword biti
+    53 00000045 FF35[00000000]                  push dword [a]
+    54 0000004B 68[58000000]                    push dword format_afisare
+    55 00000050 FF15[00000000]                  call [printf]
+    56 00000056 83C40C                          add esp, 3*4
+    57                                      
+    58 00000059 EBA5                            jmp repeta
+    59                                      
+    60                                      final:
+    61 0000005B 6A00                            push dword 0
+    62 0000005D FF15[00000000]                  call [exit]

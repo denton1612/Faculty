@@ -1,0 +1,17 @@
+# ninja log v5
+30	433	1720709754614203152	CMakeFiles/melodii_2.dir/Tests/tests.cpp.o	5c6a0e0b97e94fe8
+30	263	1720697024772465088	CMakeFiles/melodii_2.dir/Validator/Validator.cpp.o	80b1bb50c07f07ba
+29	294	1720622458914828129	CMakeFiles/melodii_2.dir/Domain/Song.cpp.o	e23e52326295d91
+40	998	1720711407375945457	CMakeFiles/melodii_2.dir/main.cpp.o	687a0e93f636f1df
+25	814	1720714088132921210	CMakeFiles/melodii_2.dir/GUI/gui.cpp.o	528189588a84d0d8
+44	66	1720536237594760661	CMakeFiles/melodii_2.dir/melodii_2_autogen/mocs_compilation.cpp.o	23ed6c550e5b156d
+4	24	1720714087346987282	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/melodii_2/cmake-build-debug/melodii_2_autogen/mocs_compilation.cpp	31bc8f4476786b4a
+4	24	1720714087346987282	melodii_2_autogen/timestamp	31bc8f4476786b4a
+815	905	1720714088225926271	melodii_2	7261bc8693731584
+30	477	1720710133087641315	CMakeFiles/melodii_2.dir/Service/Service.cpp.o	161896ba6fd59262
+30	435	1720697024946842156	CMakeFiles/melodii_2.dir/FileRepository/RepoFIle.cpp.o	9d5a0f0623d8533d
+40	818	1720711407196976084	CMakeFiles/melodii_2.dir/TableModel/TableModel.cpp.o	7e8192516e3f85fb
+4	24	1720714087346987282	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/melodii_2/cmake-build-debug/melodii_2_autogen/timestamp	31bc8f4476786b4a
+28	237	1720538246165554936	CMakeFiles/melodii_2.dir/Validare/Error.cpp.o	a231276bb2d1b6bb
+30	271	1720697024783257716	CMakeFiles/melodii_2.dir/Exceptions/Error.cpp.o	5f25ba2dd174a380
+4	24	1720714087346987282	melodii_2_autogen/mocs_compilation.cpp	31bc8f4476786b4a

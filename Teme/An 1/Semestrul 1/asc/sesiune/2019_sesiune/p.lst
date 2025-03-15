@@ -1,0 +1,68 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit,scanf
+     6                                  
+     7                                  import exit msvcrt.dll
+     8                                  import scanf msvcrt.dll
+     9                                  
+    10                                  segment data use32 class=data
+    11 00000000 00000000                    n dd 0
+    12 00000004 00000000<rept>              s1 times 100 dd 0
+    13 00000194 00<rept>                    s2 times 100 db 0
+    14 000001F8 256400                      format_citire db '%d', 0
+    15 000001FB 00                          suma_cifre_pare db 0
+    16 000001FC 00000000                    nr_elemnete dd 0
+    17 00000200 0A00                        zece dw 10
+    18                                      
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 68[00000000]                    push n
+    22 00000005 68[F8010000]                    push format_citire
+    23 0000000A FF15[00000000]                  call [scanf]
+    24 00000010 83C408                          add esp, 8
+    25                                          
+    26 00000013 8B0D[00000000]                  mov ecx, [n]
+    27 00000019 890D[FC010000]                  mov [nr_elemnete], ecx
+    28                                          
+    29 0000001F BE[04000000]                    mov esi, s1
+    30                                          citeste:
+    31 00000024 56                                  push esi
+    32 00000025 68[F8010000]                        push format_citire
+    33 0000002A FF15[00000000]                      call [scanf]
+    34 00000030 83C408                              add esp, 8
+    35 00000033 83C604                              add esi, 4
+    36 00000036 FF0D[00000000]                      dec dword [n]
+    37 0000003C 833D[00000000]00                    cmp dword [n], 0
+    38 00000043 7402                                je gata
+    39 00000045 EBDD                            jmp citeste
+    40                                          gata:
+    41                                          
+    42                                          ; avem format string ul de n dd citite de la tastatura
+    43                                          
+    44 00000047 8B0D[FC010000]                  mov ecx, [nr_elemnete]
+    45 0000004D FC                              cld
+    46 0000004E BE[04000000]                    mov esi, s1
+    47 00000053 BF[94010000]                    mov edi, s2
+    48                                          repeta:
+    49 00000058 AD                                  lodsd
+    50 00000059 50                                  push eax
+    51 0000005A 6658                                pop ax
+    52 0000005C 665A                                pop dx ; in dx:ax avem un dd din s1
+    53                                              imparte:
+    54 0000005E 66F735[00020000]                        div word [zece] ; dx = rest (cifra), ax = cat (cifrele ramase) - baza 10
+    55 00000065 F6C201                                  test dl, 1
+    56 00000068 7506                                    jnz impar
+    57 0000006A 0015[FB010000]                          add [suma_cifre_pare], dl
+    58                                                  impar:
+    59 00000070 66BA0000                                mov dx, 0
+    60 00000074 6683F800                                cmp ax, 0
+    61 00000078 7402                                    je urmatorul
+    62 0000007A EBE2                                    jmp imparte
+    63                                              urmatorul:
+    64 0000007C A0[FB010000]                            mov al, [suma_cifre_pare]
+    65 00000081 AA                                      stosb
+    66 00000082 C605[FB010000]00                        mov byte [suma_cifre_pare], 0
+    67 00000089 E2CD                            loop repeta
+    68                                          

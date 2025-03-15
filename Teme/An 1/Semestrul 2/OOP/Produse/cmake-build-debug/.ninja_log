@@ -1,0 +1,13 @@
+# ninja log v5
+0	248	1719240421601753788	CMakeFiles/Produse.dir/main.cpp.o	98149c88e1d0170f
+250	278	1719240421632481015	Produse	2f129b6dc6084e10
+3	259	1719473903079444781	CMakeFiles/Produse.dir/Domain/Produs.cpp.o	12fe90c35aef4e9f
+4	264	1719473903082622544	CMakeFiles/Produse.dir/Validari/validare.cpp.o	5afa36f44fdcc480
+4	439	1719473903257644460	CMakeFiles/Produse.dir/Repo/RepoFile.cpp.o	1e3f79509b97c6ba
+4	440	1719473903258655159	CMakeFiles/Produse.dir/Service/Service.cpp.o	505451c29683ea7
+3	451	1719473903270707133	CMakeFiles/Produse.dir/Teste/teste.cpp.o	f8562ec4712c8d2f
+260	911	1719473903728864653	CMakeFiles/Produse.dir/TabelModel/TableModel.cpp.o	59406409d9323562
+3	961	1719473903778990033	CMakeFiles/Produse.dir/main.cpp.o	318eb3c9bb5f0ce4
+264	1081	1719473903899636066	CMakeFiles/Produse.dir/GUI/ProdusGui.cpp.o	b714464e997c7353
+439	1107	1719473903925816204	CMakeFiles/Produse.dir/MiniGui/MiniGui.cpp.o	62b3bc52bd4d631f
+1107	1201	1719473904022138415	Produse	a4d33c7aa22ead14

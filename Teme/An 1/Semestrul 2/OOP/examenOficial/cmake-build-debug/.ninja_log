@@ -1,0 +1,58 @@
+# ninja log v5
+33	362	1719482509251100252	CMakeFiles/examenOficial.dir/Observer/Observer.cpp.o	bc938bfa43fea8af
+273	998	1719483717218059735	CMakeFiles/examenOficial.dir/GUI/parcaregui.cpp.o	4e354b6c324ff1f
+31	386	1719483716605260896	CMakeFiles/examenOficial.dir/Service/service.cpp.o	557813233d0d8d14
+31	437	1719483716658698035	CMakeFiles/examenOficial.dir/FileRepo/FileRepo.cpp.o	4c0492d8b00f1517
+25	42	1719474568155788858	CMakeFiles/examenOficial.dir/TableModel/TableModel.cpp.o	10365c23c98b73c2
+31	436	1719483716656789963	CMakeFiles/examenOficial.dir/Tests/tests.cpp.o	8c729e6ea0a90861
+261	1130	1719483717348223382	CMakeFiles/examenOficial.dir/GUI/gui.cpp.o	f57220f9b92af69a
+2	165	1719483768688607605	build.ninja	c8d48955bd1eefc4
+1130	1224	1719483717446238269	examenOficial	33ca5fee98288b6d
+38	60	1719474559213191025	CMakeFiles/examenOficial.dir/examenOficial_autogen/mocs_compilation.cpp.o	caed1e90ea85a96c
+30	904	1719483717122868102	CMakeFiles/examenOficial.dir/main.cpp.o	cd3e75c5f0ba17b7
+32	272	1719483716491492968	CMakeFiles/examenOficial.dir/Utils/utils.cpp.o	dc4aaf868ba776ea
+4	30	1719483716254800924	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+4	30	1719483716254800924	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+4	30	1719483716254800924	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+31	261	1719483716482009109	CMakeFiles/examenOficial.dir/Domain/Parcare.cpp.o	512d9a9890690dd
+4	30	1719483716254800924	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	25	1719483921186597094	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	25	1719483921186597094	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+4	25	1719483921186597094	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	25	1719483921186597094	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+25	856	1719483922013205657	CMakeFiles/examenOficial.dir/GUI/gui.cpp.o	f57220f9b92af69a
+856	945	1719483922104830776	examenOficial	33ca5fee98288b6d
+4	24	1719484054050858786	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	24	1719484054050858786	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+4	24	1719484054050858786	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	24	1719484054050858786	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+24	711	1719484054734218452	CMakeFiles/examenOficial.dir/GUI/parcaregui.cpp.o	4e354b6c324ff1f
+712	805	1719484054829811925	examenOficial	33ca5fee98288b6d
+4	26	1719484077297766806	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	26	1719484077297766806	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+4	26	1719484077297766806	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	26	1719484077297766806	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+27	711	1719484077977904213	CMakeFiles/examenOficial.dir/GUI/parcaregui.cpp.o	4e354b6c324ff1f
+711	799	1719484078068949448	examenOficial	33ca5fee98288b6d
+5	26	1719484164925964096	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+5	26	1719484164925964096	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+5	26	1719484164925964096	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+5	26	1719484164925964096	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+27	356	1719484165252658399	CMakeFiles/examenOficial.dir/Tests/tests.cpp.o	8c729e6ea0a90861
+356	460	1719484165357828525	examenOficial	33ca5fee98288b6d
+5	27	1719493642294982699	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+5	27	1719493642294982699	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+5	27	1719493642294982699	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+5	27	1719493642294982699	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+28	828	1719493643088634447	CMakeFiles/examenOficial.dir/GUI/parcaregui.cpp.o	4e354b6c324ff1f
+28	928	1719493643187871562	CMakeFiles/examenOficial.dir/main.cpp.o	cd3e75c5f0ba17b7
+28	973	1719493643234350216	CMakeFiles/examenOficial.dir/GUI/gui.cpp.o	f57220f9b92af69a
+973	1076	1719493643340421147	examenOficial	33ca5fee98288b6d
+4	26	1719515317584329637	examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	26	1719515317584329637	examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+4	26	1719515317584329637	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/timestamp	32b33e5881b6a1cd
+4	26	1719515317584329637	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/examenOficial/cmake-build-debug/examenOficial_autogen/mocs_compilation.cpp	32b33e5881b6a1cd
+27	781	1719515318333278593	CMakeFiles/examenOficial.dir/GUI/parcaregui.cpp.o	4e354b6c324ff1f
+27	931	1719515318484258612	CMakeFiles/examenOficial.dir/main.cpp.o	cd3e75c5f0ba17b7
+27	959	1719515318512448725	CMakeFiles/examenOficial.dir/GUI/gui.cpp.o	f57220f9b92af69a
+959	1052	1719515318606932640	examenOficial	33ca5fee98288b6d

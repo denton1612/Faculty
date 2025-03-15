@@ -1,0 +1,43 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  extern exit
+     5                                  import exit msvcrt.dll
+     6                                  
+     7                                  ;Se dau doua siruri de octeti S1 si S2. Sa se construiasca sirul D prin concatenarea elementelor din sirul S1 1uate de la stanga spre dreapta si a elementelor din sirul S2 luate de la dreapta spre stanga.
+     8                                  
+     9                                  segment data use32 class=data
+    10 00000000 01020304                    s1 db 1, 2, 3, 4
+    11                                      l1 equ $ - s1 ; l1=lungimea sirului s1
+    12 00000004 050607                      s2 db 5, 6, 7 
+    13                                      l2 equ $-s2 ; l2 = lungimea sirului s2
+    14                                      l equ l1+l2 ; l = lungimea sirului d
+    15 00000007 00<rept>                    d times l db 0
+    16                                      
+    17                                  segment code use32 class=code
+    18                                      start:
+    19 00000000 B904000000                      mov ecx, l1 ; loop ul repeta1 se va executa de l1 ori (va parcurge fiecare element al sirului s1)
+    20 00000005 BE00000000                      mov esi, 0 ; 
+    21 0000000A E30F                            jecxz sfarsit
+    22                                          repeta1:
+    23 0000000C 8A86[00000000]                      mov al, [s1+esi]
+    24 00000012 8886[07000000]                      mov [d+esi], al
+    25 00000018 46                                  inc esi
+    26 00000019 E2F1                            loop repeta1
+    27                                          sfarsit
+    27          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    28                                          
+    29 0000001B B903000000                      mov ecx, l2
+    30 00000020 BE04000000                      mov esi, l1
+    31 00000025 BF02000000                      mov edi, l2-1
+    32 0000002A E310                            jecxz final
+    33                                          repeta2:
+    34 0000002C 8A87[04000000]                      mov al, [s2+edi]
+    35 00000032 8886[07000000]                      mov [d+esi], al
+    36 00000038 4F                                  dec edi
+    37 00000039 46                                  inc esi
+    38 0000003A E2F0                            loop repeta2
+    39                                          final
+    39          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    40                                          
+    41                                          

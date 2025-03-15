@@ -1,0 +1,25 @@
+# ninja log v5
+36	416	1719311058884021106	CMakeFiles/simulare_agricole.dir/Exceptions/Exceptii.cpp.o	d84ca68f61f91404
+25	418	1719311158846702981	CMakeFiles/simulare_agricole.dir/Repository/Repo.cpp.o	4d8062c0fcef7858
+49	70	1719251927297722446	CMakeFiles/simulare_agricole.dir/simulare_agricole_autogen/mocs_compilation.cpp.o	5e63a3c5276bf482
+34	387	1719306649154933148	CMakeFiles/simulare_agricole.dir/Domain/Utilaj.cpp.o	1b39d898dddd39d5
+36	423	1719253279438402984	CMakeFiles/simulare_agricole.dir/Utils/utils.cpp.o	5c976fe493853fc3
+24	423	1719311158852194294	CMakeFiles/simulare_agricole.dir/Teste/teste.cpp.o	d896598d40aaea6
+3	24	1719311158455567383	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_agricole/cmake-build-debug/simulare_agricole_autogen/timestamp	e4260281382030d8
+3	24	1719311158455567383	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_agricole/cmake-build-debug/simulare_agricole_autogen/mocs_compilation.cpp	e4260281382030d8
+424	515	1719311158944934577	simulare_agricole	c6bd2d93845f0a54
+36	599	1719311059067490638	CMakeFiles/simulare_agricole.dir/Controller/Controller.cpp.o	7a9a6d032c4e4c9b
+35	581	1719311059048866123	CMakeFiles/simulare_agricole.dir/main.cpp.o	9c127ce72192f86e
+3	24	1719311158455567383	simulare_agricole_autogen/timestamp	e4260281382030d8
+3	24	1719311158455567383	simulare_agricole_autogen/mocs_compilation.cpp	e4260281382030d8
+6	499	1719316483576300000	simulare_agricole_autogen/timestamp	e4260281382030d8
+6	499	1719316483576300000	simulare_agricole_autogen/mocs_compilation.cpp	e4260281382030d8
+6	499	1719316483576300000	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_agricole/cmake-build-debug/simulare_agricole_autogen/timestamp	e4260281382030d8
+6	499	1719316483576300000	/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/simulare_agricole/cmake-build-debug/simulare_agricole_autogen/mocs_compilation.cpp	e4260281382030d8
+500	1097	1719316484177054699	CMakeFiles/simulare_agricole.dir/Teste/teste.cpp.o	d896598d40aaea6
+500	1098	1719316484179134352	CMakeFiles/simulare_agricole.dir/Controller/Controller.cpp.o	7a9a6d032c4e4c9b
+499	1298	1719316484378550490	CMakeFiles/simulare_agricole.dir/simulare_agricole_autogen/mocs_compilation.cpp.o	5e63a3c5276bf482
+500	1302	1719316484383449514	CMakeFiles/simulare_agricole.dir/TableModel/TableModel.cpp.o	a09ecc267b343902
+500	1538	1719316484619220182	CMakeFiles/simulare_agricole.dir/GUI/GUI.cpp.o	2a5b204697e19326
+500	1606	1719316484685444155	CMakeFiles/simulare_agricole.dir/main.cpp.o	9c127ce72192f86e
+1606	1777	1719316484859311991	simulare_agricole	f186fc387f8d2fc8

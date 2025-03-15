@@ -1,0 +1,43 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start
+     4                                  
+     5                                  extern exit, scanf, printf
+     6                                  import exit msvcrt.dll
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  ; Sa se citeasca un sir s1 (care contine doar litere mici). Folosind un alfabet (definit in segmentul de date), determinati si afisati sirul s2 obtinut prin substituirea fiecarei litere a sirului s1 cu litera coresp
+    11                                  ; Exemplu:
+    12                                  ; Alfabetul: OPQRSTUVWXYZABCDEFGHIJKLMN
+    13                                  ; Sirul s1:  anaaremere
+    14                                  ; Sirul s2:  OBOOFSASFS
+    15                                  
+    16                                  segment data use32 class=data
+    17 00000000 4F5051525354555657-         alfabetul db 'OPQRSTUVWXYZABCDEFGHIJKLMN', 0
+    17 00000009 58595A414243444546-
+    17 00000012 4748494A4B4C4D4E00 
+    18 0000001B 616E616172656D6572-         s1 db 'anaaremere', 0
+    18 00000024 6500               
+    19                                      len equ $-s1
+    20 00000026 <res 0000000B>              s2 resb len
+    21                                      
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 BF[26000000]                    mov edi, s2
+    25 00000005 BE[1B000000]                    mov esi, s1
+    26 0000000A B90B000000                      mov ecx, len
+    27                                          
+    28                                          repeta:
+    29 0000000F AC                                  lodsb
+    30 00000010 2C61                                sub al, 'a'
+    31 00000012 56                                  push esi
+    32 00000013 BE[00000000]                        mov esi, alfabetul
+    33 00000018 0FB6C0                              movzx eax, al
+    34 0000001B 01C6                                add esi, eax
+    35 0000001D AC                                  lodsb
+    36 0000001E AA                                  stosb
+    37 0000001F 5E                                  pop esi
+    38 00000020 E2ED                            loop repeta
+    39                                      
+    40                                    

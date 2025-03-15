@@ -1,0 +1,25 @@
+# ninja log v5
+2	444	1712760532717477651	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/App.cpp.o	e2df02348a90cba
+2	61	1712147638075572686	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/IteratorDictionar.cpp.o	7418ab7023220b5d
+2	258	1712147638271872238	CMakeFiles/TAD_Dictionar.dir/Teste/TestExtins.cpp.o	d5c0c50c1c0b8f78
+2	60	1712147638075622062	CMakeFiles/TAD_Dictionar.dir/Teste/TestScurt.cpp.o	25cd996d729c858a
+3	445	1712760532716221934	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/Dictionar.cpp.o	d4f53e5f40ac2389
+445	552	1712760532825445898	TAD_Dictionar	d034f9fcec37a61e
+4	75	1712783720471701028	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/IteratorDictionar.cpp.o	1ccb3537eefb1937
+5	80	1712783720478291862	CMakeFiles/TAD_Dictionar.dir/Teste/TestScurt.cpp.o	2e322dded5805941
+4	260	1712783720657358787	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/App.cpp.o	8b530e98d682aae8
+4	270	1712783720667780238	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/Dictionar.cpp.o	143711df31ccf4af
+5	276	1712783720674382449	CMakeFiles/TAD_Dictionar.dir/Teste/TestExtins.cpp.o	1a59eb254a0fcaea
+276	308	1712783720706673943	TAD_Dictionar	162e7d27b4f5f77b
+3	243	1712783913458771142	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/Dictionar.cpp.o	143711df31ccf4af
+243	274	1712783913491845285	TAD_Dictionar	162e7d27b4f5f77b
+6	391	1712834251526097547	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/IteratorDictionar.cpp.o	1ccb3537eefb1937
+7	393	1712834251528869563	CMakeFiles/TAD_Dictionar.dir/Teste/TestScurt.cpp.o	2e322dded5805941
+4	393	1712834251528758064	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/App.cpp.o	8b530e98d682aae8
+6	407	1712834251542805271	CMakeFiles/TAD_Dictionar.dir/Teste/TestExtins.cpp.o	1a59eb254a0fcaea
+6	416	1712834251551913647	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/Dictionar.cpp.o	143711df31ccf4af
+416	523	1712834251659339843	TAD_Dictionar	162e7d27b4f5f77b
+4	260	1712834259576229171	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/App.cpp.o	8b530e98d682aae8
+260	292	1712834259608876459	TAD_Dictionar	162e7d27b4f5f77b
+4	253	1712835716873758630	CMakeFiles/TAD_Dictionar.dir/Proiect_C++/App.cpp.o	8b530e98d682aae8
+254	285	1712835716906051256	TAD_Dictionar	162e7d27b4f5f77b
