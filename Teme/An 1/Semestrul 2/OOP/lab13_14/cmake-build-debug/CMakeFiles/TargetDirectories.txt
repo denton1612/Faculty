@@ -1,5 +1,5 @@
-/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/lab13_14.dir
-/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/lab13_14_autogen_timestamp_deps.dir
-/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/lab13_14_autogen.dir
+/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/lab13_14.dir
+/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/lab13_14_autogen_timestamp_deps.dir
+/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/lab13_14_autogen.dir

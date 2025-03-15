@@ -37,7 +37,7 @@ public:
 
     Service(const Service& service) = delete;
 
-    // constructorul ce primeste ca parametru un obiect de tip repository
+    // constructorul ce primeste ca parametrii un repository si o reteta
     Service(RepoAbstract& repository, Reteta& reteta): repo{repository}, reteta{reteta}, Observable() {
 
     }

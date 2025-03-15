@@ -91,7 +91,7 @@ void testGetAllRepo(){
 }
 
 void testAddInFileRepo(){
-    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
     assert(repoF.getSize() == 0);
     Medicament m1{"d1", 200, "p1", "s2"};
     repoF.addMedicament(m1);
@@ -108,11 +108,11 @@ void testAddInFileRepo(){
     assert(repoF.getSize() == 2);
     assert(repoF.getAll()[0] == m1);
     assert(repoF.getAll()[1] == m2);
-    clearFile("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    clearFile("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
 }
 
 void testDeleteInFileRepo(){
-    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
     assert(repoF.getSize() == 0);
     Medicament m1{"d1", 200, "p1", "s2"};
     repoF.addMedicament(m1);
@@ -131,11 +131,11 @@ void testDeleteInFileRepo(){
     catch (Error& err){
         assert(err.getMesaj() == "Medicamentul nu exista sau nu este valid!");
     }
-    clearFile("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    clearFile("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
 }
 
 void testUpdateInFileRepo(){
-    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
     assert(repoF.getSize() == 0);
     Medicament m1{"d1", 200, "p1", "s2"};
     repoF.addMedicament(m1);
@@ -152,7 +152,7 @@ void testUpdateInFileRepo(){
     catch (Error& err){
         assert(err.getMesaj() == "Medicamentul nu exista sau nu este valid!");
     }
-    clearFile("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    clearFile("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
 }
 
 void testRepo(){
@@ -334,7 +334,7 @@ void testFiltruSubstService(){
 
 void testSortareService(){
     Repo repo;
-    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    InFileRepo repoF("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
     Reteta reteta;
     Service service{repo, reteta};
     Service serviceF{repoF, reteta};
@@ -377,11 +377,11 @@ void testSortareService(){
     assert(sortateF[0].getSubst() == "s8" && sortate[2].getPret() == 50);
     assert(sortateF[2].getSubst() == "s2" && sortate[0].getPret() == 50);
     assert(sortateF[1].getSubst() == "s2" && sortate[1].getPret() == 100) ;
-    clearFile("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    clearFile("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
 }
 
 void testAddRetetaService(){
-    InFileRepo repoF{"/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest"};
+    InFileRepo repoF{"/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest"};
     Reteta reteta;
     Service service{repoF, reteta};
     assert(service.getSize() == 0);
@@ -400,7 +400,7 @@ void testAddRetetaService(){
         assert(true);
         assert(error.getMesaj() == "Medicament indisponibil in farmacie!");
     }
-    clearFile("/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/lab_10-11(GUI)/tests/InFileRepoTest");
+    clearFile("/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/Teste/InFileRepoTest");
 }
 
 void testDeleteAllService(){

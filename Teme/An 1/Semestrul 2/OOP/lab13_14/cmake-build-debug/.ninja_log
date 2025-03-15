@@ -1,46 +1,103 @@
 # ninja log v5
-3	466	1740912060856990487	build.ninja	1b75b85d6d4b7b35
-51	1146	1740910438291192943	CMakeFiles/lab13_14.dir/GUI/FarmacieGUI.cpp.o	508b114e8712b64a
-1612	2711	1740860160533017469	CMakeFiles/lab13_14.dir/GUI/RetetaReadOnlyGUI.cpp.o	d1834906d59481b8
-51	1112	1740910438258718620	CMakeFiles/lab13_14.dir/main.cpp.o	4916fe8939351a20
-1650	2368	1740860160193436952	CMakeFiles/lab13_14.dir/ListModel/ListModel.cpp.o	672f8124295b268f
-10	48	1740910437201571212	/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	8077636b0c254512
-381	1194	1740860159014632007	CMakeFiles/lab13_14.dir/lab13_14_autogen/mocs_compilation.cpp.o	b6f7de9783ff2aa7
-1146	1379	1740910438528212763	lab13_14	e2eb70ce78d6b7d9
-893	1698	1740860159518409036	CMakeFiles/lab13_14.dir/Service/Service.cpp.o	ee967fcdf41336b2
-1194	1650	1740860159474617127	CMakeFiles/lab13_14.dir/Undo/ActiuneUndo.cpp.o	330d15a3fa0d7f7b
-1524	2662	1740860160485137025	CMakeFiles/lab13_14.dir/GUI/RetetaGUI.cpp.o	8588221eaaa80b4b
-10	48	1740910437201571212	lab13_14_autogen/mocs_compilation.cpp	8077636b0c254512
-383	893	1740860158715626060	CMakeFiles/lab13_14.dir/Repository/InFileRepo.cpp.o	ce9c7269dec88b12
-789	1411	1740860159228932228	CMakeFiles/lab13_14.dir/Teste/teste.cpp.o	60b5e9bd3716a4b6
-1059	1524	1740860159348987752	CMakeFiles/lab13_14.dir/Reteta/Reteta.cpp.o	45036bd7f8362e39
-850	1343	1740860159167729730	CMakeFiles/lab13_14.dir/Utils/utils.cpp.o	7e51984e8fb6bb70
-1343	1792	1740860159616360649	CMakeFiles/lab13_14.dir/Observer/Observer.cpp.o	a94242498dc4c823
-382	781	1740860158605399465	CMakeFiles/lab13_14.dir/Repository/RepoAbstract.cpp.o	395f2aededf8c7e7
-10	48	1740910437201571212	lab13_14_autogen/timestamp	8077636b0c254512
-382	789	1740860158612429258	CMakeFiles/lab13_14.dir/Domain/Medicament.cpp.o	e407604295bf3879
-382	850	1740860158666121802	CMakeFiles/lab13_14.dir/Repository/Repo.cpp.o	5ecde6fc17830575
-783	1059	1740860158883920566	CMakeFiles/lab13_14.dir/Validare/Error.cpp.o	c12316e8d8a16b6a
-10	48	1740910437201571212	/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	8077636b0c254512
-8	381	1740912072072697000	lab13_14_autogen/timestamp	8077636b0c254512
-8	381	1740912072072697000	lab13_14_autogen/mocs_compilation.cpp	8077636b0c254512
-8	381	1740912072072697000	/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	8077636b0c254512
-8	381	1740912072072697000	/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	8077636b0c254512
-381	728	1740912072424698359	CMakeFiles/lab13_14.dir/Repository/RepoAbstract.cpp.o	2e12664bfb0272e0
-381	733	1740912072431279275	CMakeFiles/lab13_14.dir/Domain/Medicament.cpp.o	e889e43abe92ca23
-381	779	1740912072477149608	CMakeFiles/lab13_14.dir/Repository/Repo.cpp.o	c856c94cc9557631
-382	813	1740912072511046024	CMakeFiles/lab13_14.dir/Repository/InFileRepo.cpp.o	56472d93ac688f22
-728	957	1740912072655470690	CMakeFiles/lab13_14.dir/Validare/Error.cpp.o	8355a777d6185115
+3	466	1742039124986584733	build.ninja	1b75b85d6d4b7b35
+1391	2311	1740912074006804010	CMakeFiles/lab13_14.dir/GUI/RetetaReadOnlyGUI.cpp.o	495be42e9edd1fdf
+1260	2277	1740912073973061219	CMakeFiles/lab13_14.dir/GUI/FarmacieGUI.cpp.o	3d17676a59fbf4d
+381	1445	1740912073140674227	CMakeFiles/lab13_14.dir/main.cpp.o	9db22bdca0c6bd25
+1426	2053	1740912073749654221	CMakeFiles/lab13_14.dir/ListModel/ListModel.cpp.o	be82be885beca9b0
 381	1048	1740912072745385231	CMakeFiles/lab13_14.dir/lab13_14_autogen/mocs_compilation.cpp.o	53087e684bf574e5
-779	1163	1740912072859248688	CMakeFiles/lab13_14.dir/Utils/utils.cpp.o	a7fb1a12349fdae1
+2312	2417	1740912074115887384	lab13_14	a7a14bb7198b5334
+813	1426	1740912073121660436	CMakeFiles/lab13_14.dir/Service/Service.cpp.o	60a73844fe5524be
+1048	1391	1740912073089067227	CMakeFiles/lab13_14.dir/Undo/ActiuneUndo.cpp.o	9c2bc7bcf5e58ed3
+1322	2227	1740912073922891219	CMakeFiles/lab13_14.dir/GUI/RetetaGUI.cpp.o	e31f192e670cd6fd
+8	381	1740912072072697000	lab13_14_autogen/mocs_compilation.cpp	8077636b0c254512
+382	813	1740912072511046024	CMakeFiles/lab13_14.dir/Repository/InFileRepo.cpp.o	56472d93ac688f22
 733	1260	1740912072956666895	CMakeFiles/lab13_14.dir/Teste/teste.cpp.o	11becda3e55d3e24
 957	1321	1740912073019288645	CMakeFiles/lab13_14.dir/Reteta/Reteta.cpp.o	7e32877e591f5b55
-1048	1391	1740912073089067227	CMakeFiles/lab13_14.dir/Undo/ActiuneUndo.cpp.o	9c2bc7bcf5e58ed3
-813	1426	1740912073121660436	CMakeFiles/lab13_14.dir/Service/Service.cpp.o	60a73844fe5524be
-381	1445	1740912073140674227	CMakeFiles/lab13_14.dir/main.cpp.o	9db22bdca0c6bd25
+779	1163	1740912072859248688	CMakeFiles/lab13_14.dir/Utils/utils.cpp.o	a7fb1a12349fdae1
 1163	1477	1740912073174779268	CMakeFiles/lab13_14.dir/Observer/Observer.cpp.o	843c242942ba6583
-1426	2053	1740912073749654221	CMakeFiles/lab13_14.dir/ListModel/ListModel.cpp.o	be82be885beca9b0
-1322	2227	1740912073922891219	CMakeFiles/lab13_14.dir/GUI/RetetaGUI.cpp.o	e31f192e670cd6fd
-1260	2277	1740912073973061219	CMakeFiles/lab13_14.dir/GUI/FarmacieGUI.cpp.o	3d17676a59fbf4d
-1391	2311	1740912074006804010	CMakeFiles/lab13_14.dir/GUI/RetetaReadOnlyGUI.cpp.o	495be42e9edd1fdf
-2312	2417	1740912074115887384	lab13_14	a7a14bb7198b5334
+381	728	1740912072424698359	CMakeFiles/lab13_14.dir/Repository/RepoAbstract.cpp.o	2e12664bfb0272e0
+381	779	1740912072477149608	CMakeFiles/lab13_14.dir/Repository/Repo.cpp.o	c856c94cc9557631
+381	733	1740912072431279275	CMakeFiles/lab13_14.dir/Domain/Medicament.cpp.o	e889e43abe92ca23
+8	381	1740912072072697000	lab13_14_autogen/timestamp	8077636b0c254512
+728	957	1740912072655470690	CMakeFiles/lab13_14.dir/Validare/Error.cpp.o	8355a777d6185115
+12	397	1742039129940207000	lab13_14_autogen/timestamp	ebf4959a65796be
+12	397	1742039129940207000	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+12	397	1742039129940207000	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+12	397	1742039129940207000	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+398	762	1742039130310354817	CMakeFiles/lab13_14.dir/Repository/RepoAbstract.cpp.o	26eb7097e067edc1
+398	770	1742039130318500560	CMakeFiles/lab13_14.dir/Domain/Medicament.cpp.o	7ccc11071be653fd
+398	815	1742039130362690648	CMakeFiles/lab13_14.dir/Repository/Repo.cpp.o	90dd7be020275f91
+398	847	1742039130395292080	CMakeFiles/lab13_14.dir/Repository/InFileRepo.cpp.o	922e3fed5dae27a5
+762	1006	1742039130553987781	CMakeFiles/lab13_14.dir/Validare/Error.cpp.o	7e6fc400dc12cc7f
+397	1116	1742039130662209733	CMakeFiles/lab13_14.dir/lab13_14_autogen/mocs_compilation.cpp.o	67b596fb04d6b13
+815	1222	1742039130770522810	CMakeFiles/lab13_14.dir/Utils/utils.cpp.o	f50fafe5861d1b06
+771	1293	1742039130841038585	CMakeFiles/lab13_14.dir/Teste/teste.cpp.o	7393e59ed67a26ea
+1006	1368	1742039130916649606	CMakeFiles/lab13_14.dir/Reteta/Reteta.cpp.o	455836cee9488ec3
+1116	1454	1742039131003348659	CMakeFiles/lab13_14.dir/Undo/ActiuneUndo.cpp.o	a73d84d14fb54ea2
+847	1460	1742039131007820363	CMakeFiles/lab13_14.dir/Service/Service.cpp.o	4c6949ee3ea3659e
+397	1482	1742039131027683139	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+1222	1533	1742039131081830260	CMakeFiles/lab13_14.dir/Observer/Observer.cpp.o	ee474b5d53bb4e1b
+1460	2080	1742039131628057223	CMakeFiles/lab13_14.dir/ListModel/ListModel.cpp.o	79b97535e3a35989
+1368	2304	1742039131850142498	CMakeFiles/lab13_14.dir/GUI/RetetaGUI.cpp.o	9f8bde5db0c0e188
+1293	2307	1742039131853337079	CMakeFiles/lab13_14.dir/GUI/FarmacieGUI.cpp.o	3d3b1a75479d8688
+1454	2365	1742039131912029697	CMakeFiles/lab13_14.dir/GUI/RetetaReadOnlyGUI.cpp.o	bb523d3919a0b913
+2365	2472	1742039132021923189	lab13_14	a7a14bb7198b5334
+9	48	1742039197275706768	lab13_14_autogen/timestamp	ebf4959a65796be
+9	48	1742039197275706768	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+9	48	1742039197275706768	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+9	48	1742039197275706768	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+52	1061	1742039198279745935	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+1061	1229	1742039198453111624	lab13_14	a7a14bb7198b5334
+7	40	1742039246702080267	lab13_14_autogen/timestamp	ebf4959a65796be
+7	40	1742039246702080267	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+7	40	1742039246702080267	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+7	40	1742039246702080267	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+7	40	1742039251903781286	lab13_14_autogen/timestamp	ebf4959a65796be
+7	40	1742039251903781286	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+7	40	1742039251903781286	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+7	40	1742039251903781286	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+43	987	1742039252845685296	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+987	1095	1742039252955852622	lab13_14	a7a14bb7198b5334
+9	46	1742039299985653026	lab13_14_autogen/timestamp	ebf4959a65796be
+9	46	1742039299985653026	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+9	46	1742039299985653026	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+9	46	1742039299985653026	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+49	1071	1742039301005479680	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+1071	1176	1742039301112537841	lab13_14	a7a14bb7198b5334
+9	44	1742039318803673416	lab13_14_autogen/timestamp	ebf4959a65796be
+9	44	1742039318803673416	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+9	44	1742039318803673416	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+9	44	1742039318803673416	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+47	1043	1742039319797164591	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+1043	1147	1742039319903935337	lab13_14	a7a14bb7198b5334
+6	46	1742039414102304175	lab13_14_autogen/timestamp	ebf4959a65796be
+6	46	1742039414102304175	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+6	46	1742039414102304175	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+6	46	1742039414102304175	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+49	1151	1742039415202487270	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+1151	1262	1742039415315736925	lab13_14	a7a14bb7198b5334
+7	40	1742039421456171814	lab13_14_autogen/timestamp	ebf4959a65796be
+7	40	1742039421456171814	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+7	40	1742039421456171814	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+7	40	1742039421456171814	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+44	965	1742039422375857971	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+965	1064	1742039422477866785	lab13_14	a7a14bb7198b5334
+9	341	1742040355050523000	lab13_14_autogen/timestamp	ebf4959a65796be
+9	341	1742040355050523000	lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+9	341	1742040355050523000	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/timestamp	ebf4959a65796be
+9	341	1742040355050523000	/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/mocs_compilation.cpp	ebf4959a65796be
+342	863	1742040355577199331	CMakeFiles/lab13_14.dir/Repository/RepoAbstract.cpp.o	26eb7097e067edc1
+341	879	1742040355594241958	CMakeFiles/lab13_14.dir/Domain/Medicament.cpp.o	7ccc11071be653fd
+342	932	1742040355646237925	CMakeFiles/lab13_14.dir/Repository/Repo.cpp.o	90dd7be020275f91
+343	962	1742040355674822290	CMakeFiles/lab13_14.dir/Repository/InFileRepo.cpp.o	922e3fed5dae27a5
+341	1258	1742040355969178212	CMakeFiles/lab13_14.dir/lab13_14_autogen/mocs_compilation.cpp.o	67b596fb04d6b13
+962	1356	1742040356070504305	CMakeFiles/lab13_14.dir/Undo/ActiuneUndo.cpp.o	a73d84d14fb54ea2
+932	1361	1742040356076599445	CMakeFiles/lab13_14.dir/Reteta/Reteta.cpp.o	455836cee9488ec3
+863	1491	1742040356204323814	CMakeFiles/lab13_14.dir/Teste/teste.cpp.o	7393e59ed67a26ea
+880	1579	1742040356292779625	CMakeFiles/lab13_14.dir/Service/Service.cpp.o	4c6949ee3ea3659e
+341	1586	1742040356297777429	CMakeFiles/lab13_14.dir/main.cpp.o	96bd228629f0005f
+1491	2171	1742040356885785354	CMakeFiles/lab13_14.dir/ListModel/ListModel.cpp.o	79b97535e3a35989
+1356	2335	1742040357047594519	CMakeFiles/lab13_14.dir/GUI/RetetaGUI.cpp.o	9f8bde5db0c0e188
+1361	2362	1742040357073891544	CMakeFiles/lab13_14.dir/GUI/RetetaReadOnlyGUI.cpp.o	bb523d3919a0b913
+1258	2363	1742040357076445885	CMakeFiles/lab13_14.dir/GUI/FarmacieGUI.cpp.o	3d3b1a75479d8688
+2363	2539	1742040357256100262	lab13_14	a7a14bb7198b5334

@@ -1,5 +1,5 @@
-/Users/stiubedenis/Desktop/Facultate/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/SGDQY27SED/moc_ListModel.cpp: /Users/stiubedenis/Desktop/Facultate/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/ListModel/ListModel.h \
-  /Users/stiubedenis/Desktop/Facultate/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/moc_predefs.h \
+/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/SGDQY27SED/moc_ListModel.cpp: /Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/ListModel/ListModel.h \
+  /Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/cmake-build-debug/lab13_14_autogen/moc_predefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -915,7 +915,7 @@
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
-  /Users/stiubedenis/Desktop/Facultate/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/Domain/Medicament.h \
+  /Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An\ 1/Semestrul\ 2/OOP/lab13_14/Domain/Medicament.h \
   /Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QAbstractListModel \
   /Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \

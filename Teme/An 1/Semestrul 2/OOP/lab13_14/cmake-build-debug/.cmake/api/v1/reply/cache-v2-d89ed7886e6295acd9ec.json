@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug"
+			"value" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT"
+			"value" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1039,7 +1039,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "QT"
+			"value" : "lab13_14"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1395,7 +1395,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]"
+			"value" : "[/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1455,7 +1455,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.7.0/macos/bin/macdeployqt"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/bin/macdeployqt"
 		},
 		{
 			"name" : "OPENGL_INCLUDE_DIR",
@@ -1471,7 +1471,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework"
 		},
 		{
 			"name" : "OPENGL_gl_LIBRARY",
@@ -1487,7 +1487,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework"
 		},
 		{
 			"name" : "OPENGL_glu_LIBRARY",
@@ -1503,7 +1503,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -1528,18 +1528,6 @@
 			],
 			"type" : "STRING",
 			"value" : ""
-		},
-		{
-			"name" : "QT_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT/cmake-build-debug"
 		},
 		{
 			"name" : "QT_FEATURE_abstractbutton",
@@ -1878,6 +1866,30 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_c11",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: c11 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_c99",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: c99 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_calendarwidget",
 			"properties" : 
 			[
@@ -1956,18 +1968,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: clock_monotonic (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_close_range",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: close_range (from target Qt6::Core)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -2154,6 +2154,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_cxx11",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: cxx11 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_cxx11_future",
 			"properties" : 
 			[
@@ -2166,12 +2178,48 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_cxx14",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: cxx14 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_cxx17",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: cxx17 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_cxx17_filesystem",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: cxx17_filesystem (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_cxx1z",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: cxx1z (from target Qt6::Core)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -2730,6 +2778,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_eventfd",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: eventfd (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_f16c",
 			"properties" : 
 			[
@@ -3006,24 +3066,24 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_glibc",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: glibc (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_graphicseffect",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: graphicseffect (from target Qt6::Widgets)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_graphicsframecapture",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: graphicsframecapture (from target Qt6::Gui)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3882,18 +3942,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_openssl_hash",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: openssl_hash (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_openssl_linked",
 			"properties" : 
 			[
@@ -4096,30 +4144,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "OFF"
-		},
-		{
-			"name" : "QT_FEATURE_posix_sem",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: posix_sem (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_posix_shm",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: posix_shm (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_precompile_header",
@@ -4806,6 +4830,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_statx",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: statx (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_std_atomic64",
 			"properties" : 
 			[
@@ -4900,18 +4936,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_style_windows11",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: style_windows11 (from target Qt6::Widgets)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_style_windowsvista",
@@ -5088,30 +5112,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: systemtrayicon (from target Qt6::Gui)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_sysv_sem",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: sysv_sem (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_sysv_shm",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: sysv_shm (from target Qt6::Core)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -5634,18 +5634,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_wayland",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: wayland (from target Qt6::Gui)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "OFF"
-		},
-		{
 			"name" : "QT_FEATURE_whatsthis",
 			"properties" : 
 			[
@@ -5910,30 +5898,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/Users/stiubedenis/Desktop/Facultate/Teme/Semestrul 2/OOP/QT"
-		},
-		{
 			"name" : "Qt6CoreTools_DIR",
 			"properties" : 
 			[
@@ -5943,7 +5907,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6CoreTools"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6CoreTools"
 		},
 		{
 			"name" : "Qt6Core_DIR",
@@ -5955,7 +5919,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6Core"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6Core"
 		},
 		{
 			"name" : "Qt6DBusTools_DIR",
@@ -5967,7 +5931,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6DBusTools"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6DBusTools"
 		},
 		{
 			"name" : "Qt6DBus_DIR",
@@ -5979,7 +5943,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6DBus"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6DBus"
 		},
 		{
 			"name" : "Qt6GuiTools_DIR",
@@ -5991,7 +5955,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6GuiTools"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6GuiTools"
 		},
 		{
 			"name" : "Qt6Gui_DIR",
@@ -6003,7 +5967,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6Gui"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6Gui"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
@@ -6015,7 +5979,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6WidgetsTools"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6WidgetsTools"
 		},
 		{
 			"name" : "Qt6Widgets_DIR",
@@ -6027,19 +5991,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6Widgets"
-		},
-		{
-			"name" : "Qt6_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6."
-				}
-			],
-			"type" : "PATH",
-			"value" : "/Users/stiubedenis/Downloads/Qt/6.8.0/macos/lib/cmake/Qt6"
+			"value" : "/Users/stiubedenis/Downloads/Qt/6.5.3/macos/lib/cmake/Qt6Widgets"
 		},
 		{
 			"name" : "WrapOpenGL_AGL",
@@ -6051,7 +6003,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/AGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/AGL.framework"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -6064,6 +6016,42 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/usr/local"
+		},
+		{
+			"name" : "lab13_14_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug"
+		},
+		{
+			"name" : "lab13_14_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "lab13_14_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14"
 		}
 	],
 	"kind" : "cache",

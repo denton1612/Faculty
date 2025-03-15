@@ -1,4 +1,4 @@
-# Install script for directory: /Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14
+# Install script for directory: /Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

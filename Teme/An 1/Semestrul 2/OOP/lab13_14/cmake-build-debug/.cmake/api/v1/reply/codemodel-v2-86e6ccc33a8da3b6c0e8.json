@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lab13_14::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lab13_14-Debug-ed962f7bbfd385456c31.json",
+					"jsonFile" : "target-lab13_14-Debug-cf36282bcb7ab9b010cf.json",
 					"name" : "lab13_14",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug",
-		"source" : "/Users/stiubedenis/Desktop/Facultate/Teme/An 1/Semestrul 2/OOP/lab13_14"
+		"build" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14/cmake-build-debug",
+		"source" : "/Users/stiubedenis/Desktop/Facultate/Faculty/Teme/An 1/Semestrul 2/OOP/lab13_14"
 	},
 	"version" : 
 	{

@@ -12,11 +12,9 @@ class Repo : public RepoAbstract{
         friend class Reteta;
 
         private:
-        vector<Medicament> lista;
+        vector<Medicament> medicamente;
 
         public:
-
-//    Repository(const Repository& repo) = delete;
 
         Repo() = default;
 
@@ -45,8 +43,8 @@ class Repo : public RepoAbstract{
         vector<Medicament> getAllCopy() override;
 
         // returneaza numarul medicamentelor stocate
-        unsigned int getSize() const override{
-            return lista.size();
+        [[nodiscard]] unsigned int getSize() const override{
+            return medicamente.size();
         }
 
 };
